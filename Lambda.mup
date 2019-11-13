@@ -1,0 +1,545 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Lambda",
+      "id": 1,
+      "attr": {
+        "position": [
+          -30,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Free Tier",
+          "id": "2.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "1,000,000 Request Free",
+              "id": "3.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "2": {
+              "title": "400,000 sec of execution for function using 1GB or 3,200,000 sec of execution for function using 128MB execution",
+              "id": "4.5eabdea00d1f11e995d9a17dd5e6c942"
+            }
+          }
+        },
+        "11": {
+          "title": "Pricing",
+          "id": "5.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "0.2 for 1,000,000 requests and 1$ for 600,000 sec of execution for 1GB function",
+              "id": "6.5eabdea00d1f11e995d9a17dd5e6c942"
+            }
+          }
+        },
+        "12": {
+          "title": "Versioninig",
+          "id": "35.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "Terminologies",
+              "id": "36.5eabdea00d1f11e995d9a17dd5e6c942",
+              "ideas": {
+                "1": {
+                  "title": "LATEST",
+                  "id": "37.5eabdea00d1f11e995d9a17dd5e6c942",
+                  "ideas": {
+                    "1": {
+                      "title": "Always we will work on this, MUTABLE",
+                      "id": "38.5eabdea00d1f11e995d9a17dd5e6c942",
+                      "ideas": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "VERSION",
+                  "id": "41.5eabdea00d1f11e995d9a17dd5e6c942",
+                  "ideas": {
+                    "1": {
+                      "title": "When you want to CUT, IMMUTABLE",
+                      "id": "42.5eabdea00d1f11e995d9a17dd5e6c942",
+                      "ideas": {}
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ALIAS",
+                  "id": "46.5eabdea00d1f11e995d9a17dd5e6c942",
+                  "ideas": {
+                    "1": {
+                      "title": "When you want to Release a version, MUTABLE. Compare this to environment",
+                      "id": "47.5eabdea00d1f11e995d9a17dd5e6c942"
+                    },
+                    "2": {
+                      "title": "Can run 2 version in same time for BLUE/GREEN testing",
+                      "id": "48.5eabdea00d1f11e995d9a17dd5e6c942"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "13": {
+          "title": "Config",
+          "id": "52.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "Following params can be configured",
+              "id": "54.5eabdea00d1f11e995d9a17dd5e6c942",
+              "ideas": {
+                "1": {
+                  "title": "IAM role",
+                  "id": "56.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "2": {
+                  "title": "Running Time",
+                  "id": "57.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "3": {
+                  "title": "Concurrency",
+                  "id": "58.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "4": {
+                  "title": "Memory",
+                  "id": "59.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "5": {
+                  "title": "Environment Variable",
+                  "id": "60.5eabdea00d1f11e995d9a17dd5e6c942"
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "limitations",
+          "id": "7.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "When uploading file the zip must be <50MB and when unzipped must be less than 250 MB",
+              "id": "8.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "2": {
+              "title": "3sec min to 300 sec max",
+              "id": "9.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "3": {
+              "title": "128MB to 3G max execution capacity",
+              "id": "10.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "4": {
+              "title": "/tmp folder capacity 512MB",
+              "id": "11.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "5": {
+              "title": "Default Concurrency 1000",
+              "id": "12.5eabdea00d1f11e995d9a17dd5e6c942",
+              "ideas": {
+                "1": {
+                  "title": "Reserved Capacity can be set as a threshold",
+                  "id": "25.5eabdea00d1f11e995d9a17dd5e6c942",
+                  "ideas": {
+                    "1": {
+                      "title": "Failure Handling",
+                      "id": "26.5eabdea00d1f11e995d9a17dd5e6c942",
+                      "ideas": {
+                        "1": {
+                          "title": "Asynchronous (s3) - Will retry twice and fall into DLQ",
+                          "id": "28.5eabdea00d1f11e995d9a17dd5e6c942",
+                          "ideas": {
+                            "1": {
+                              "title": "DLQ can be SNS or SQS",
+                              "id": "30.5eabdea00d1f11e995d9a17dd5e6c942",
+                              "ideas": {}
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Synchronous failure will throw HTTP 429",
+                          "id": "34.5eabdea00d1f11e995d9a17dd5e6c942"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "6": {
+              "title": "Env variables up to 4KB",
+              "id": "61.5eabdea00d1f11e995d9a17dd5e6c942"
+            }
+          }
+        },
+        "-2": {
+          "title": "Creating Function",
+          "id": "13.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "Inline Code editor",
+              "id": "14.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "2": {
+              "title": "Uploading Zip",
+              "id": "15.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "3": {
+              "title": "Function from S3",
+              "id": "16.5eabdea00d1f11e995d9a17dd5e6c942"
+            },
+            "4": {
+              "title": "Supported Languages",
+              "id": "17.5eabdea00d1f11e995d9a17dd5e6c942",
+              "ideas": {
+                "1": {
+                  "title": "C#",
+                  "id": "19.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "2": {
+                  "title": "Java",
+                  "id": "20.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "3": {
+                  "title": "Python",
+                  "id": "21.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "4": {
+                  "title": "NodeJS",
+                  "id": "22.5eabdea00d1f11e995d9a17dd5e6c942"
+                },
+                "5": {
+                  "title": "Go",
+                  "id": "23.5eabdea00d1f11e995d9a17dd5e6c942"
+                }
+              }
+            }
+          }
+        },
+        "-3": {
+          "title": "Logging",
+          "id": "49.5eabdea00d1f11e995d9a17dd5e6c942",
+          "ideas": {
+            "1": {
+              "title": "By Default CloudWatch",
+              "id": "50.5eabdea00d1f11e995d9a17dd5e6c942",
+              "ideas": {
+                "1": {
+                  "title": "Log Group will have the Function Name",
+                  "id": "62.5eabdea00d1f11e995d9a17dd5e6c942",
+                  "ideas": {
+                    "1": {
+                      "title": "Within that will be the log streams for each execution",
+                      "id": "63.5eabdea00d1f11e995d9a17dd5e6c942"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Can enable Tracing and works with X-Ray ",
+              "id": "51.5eabdea00d1f11e995d9a17dd5e6c942"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Lambda",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546277359340,
+      "title": "Lambda",
+      "description": "MindMup mind map: Lambda",
+      "slug": "lambda",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

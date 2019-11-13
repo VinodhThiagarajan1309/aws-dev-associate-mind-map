@@ -1,0 +1,446 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Code Pipeline",
+      "id": 1,
+      "attr": {
+        "position": [
+          -47,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Visual Workflow",
+          "id": "2.06d38b30137111e9ac2e739844a0c113"
+        },
+        "11": {
+          "title": "Made of Stages",
+          "id": "3.06d38b30137111e9ac2e739844a0c113",
+          "ideas": {
+            "1": {
+              "title": "Each stage will create an artifacts which gets into S3 and feeds the next stage",
+              "id": "4.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "Each Stage progress will send out a SNS notification  because of a CLOUD WATCH EVENT RULE",
+                  "id": "33.06d38b30137111e9ac2e739844a0c113"
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Creating",
+          "id": "5.06d38b30137111e9ac2e739844a0c113",
+          "ideas": {
+            "1": {
+              "title": "Choose Source",
+              "id": "6.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "Git ",
+                  "id": "11.06d38b30137111e9ac2e739844a0c113"
+                },
+                "2": {
+                  "title": "Code commit",
+                  "id": "12.06d38b30137111e9ac2e739844a0c113"
+                }
+              }
+            },
+            "2": {
+              "title": "Choose Build Type",
+              "id": "7.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "Jenkins",
+                  "id": "16.06d38b30137111e9ac2e739844a0c113"
+                },
+                "2": {
+                  "title": "Code build",
+                  "id": "17.06d38b30137111e9ac2e739844a0c113"
+                }
+              }
+            },
+            "3": {
+              "title": "Choose Deploy Options",
+              "id": "8.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "ECS",
+                  "id": "18.06d38b30137111e9ac2e739844a0c113"
+                },
+                "2": {
+                  "title": "E bean Stalk",
+                  "id": "19.06d38b30137111e9ac2e739844a0c113"
+                },
+                "3": {
+                  "title": "Code Deploy",
+                  "id": "20.06d38b30137111e9ac2e739844a0c113"
+                }
+              }
+            },
+            "4": {
+              "title": "Create a Service Role with All the required Permissions",
+              "id": "9.06d38b30137111e9ac2e739844a0c113"
+            },
+            "5": {
+              "title": "s3 link will be provided",
+              "id": "10.06d38b30137111e9ac2e739844a0c113"
+            },
+            "6": {
+              "title": "One the Creation is Done a Drag and Drop UI with Stages is provided",
+              "id": "23.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "Add A new Stage",
+                  "id": "24.06d38b30137111e9ac2e739844a0c113",
+                  "ideas": {
+                    "1": {
+                      "title": "can be",
+                      "id": "25.06d38b30137111e9ac2e739844a0c113",
+                      "ideas": {
+                        "1": {
+                          "title": "Manual Approval",
+                          "id": "26.06d38b30137111e9ac2e739844a0c113",
+                          "ideas": {
+                            "1": {
+                              "title": "Will stop with a review button and will proceed once approved",
+                              "id": "30.06d38b30137111e9ac2e739844a0c113"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Source",
+                          "id": "27.06d38b30137111e9ac2e739844a0c113"
+                        },
+                        "3": {
+                          "title": "Test/Build",
+                          "id": "28.06d38b30137111e9ac2e739844a0c113"
+                        },
+                        "4": {
+                          "title": "Deploy",
+                          "id": "29.06d38b30137111e9ac2e739844a0c113"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Configure SNS ",
+                      "id": "34.06d38b30137111e9ac2e739844a0c113"
+                    }
+                  }
+                }
+              }
+            },
+            "7": {
+              "title": "Trouble Shooting",
+              "id": "31.06d38b30137111e9ac2e739844a0c113",
+              "ideas": {
+                "1": {
+                  "title": "IAM Service Role might not have enough permissions",
+                  "id": "32.06d38b30137111e9ac2e739844a0c113"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Code Pipeline",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546971565335,
+      "title": "Code Pipeline",
+      "description": "MindMup mind map: Code Pipeline",
+      "slug": "code_pipeline",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

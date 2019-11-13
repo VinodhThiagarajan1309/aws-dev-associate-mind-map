@@ -1,0 +1,788 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Dynamo Db",
+      "id": 1,
+      "attr": {
+        "position": [
+          -41,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Characteristics",
+          "id": "2.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "By default 3 az replication",
+              "id": "14.b524a4000ece11e9bb44df9b486df96d"
+            },
+            "2": {
+              "title": "Serverless NoSQL DB",
+              "id": "15.b524a4000ece11e9bb44df9b486df96d"
+            },
+            "3": {
+              "title": "Max row size is 400KB",
+              "id": "24.b524a4000ece11e9bb44df9b486df96d"
+            },
+            "4": {
+              "title": "All Scalar type + List,Map,Set attributes types supported",
+              "id": "25.b524a4000ece11e9bb44df9b486df96d"
+            }
+          },
+          "attr": {
+            "position": [
+              191,
+              -721,
+              8
+            ]
+          }
+        },
+        "11": {
+          "title": "Table Creation flow",
+          "id": "3.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "Provide TableName",
+              "id": "16.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "MUST decide partitionKey ( number,String or Binary)",
+                  "id": "17.b524a4000ece11e9bb44df9b486df96d",
+                  "ideas": {
+                    "1": {
+                      "title": "Provision WCU and RCU or AutoScale",
+                      "id": "18.b524a4000ece11e9bb44df9b486df96d"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Optional RangeKey AKA SortKey",
+                  "id": "20.b524a4000ece11e9bb44df9b486df96d"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              198,
+              -427,
+              9
+            ]
+          }
+        },
+        "31": {
+          "title": "Concurrency",
+          "id": "5.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "Follows Optimistic Locking model",
+              "id": "56.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "Which means, update only when a condition suceeds",
+                  "id": "58.b524a4000ece11e9bb44df9b486df96d"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              220,
+              -204,
+              10
+            ]
+          }
+        },
+        "51": {
+          "title": "Indexes",
+          "id": "8.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "Local Secondary Index ( LSI )",
+              "id": "81.1eacb8d00f7f11e9817c09f9d5d9a51d",
+              "ideas": {
+                "1": {
+                  "title": "If there is a need to have the same partition key but different sort key then LSI ( upto 5 supported per partition )",
+                  "id": "82.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                },
+                "2": {
+                  "title": "Must be chosen during creation",
+                  "id": "86.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                }
+              }
+            },
+            "2": {
+              "title": "Global Secondary Index ( GSI )",
+              "id": "83.1eacb8d00f7f11e9817c09f9d5d9a51d",
+              "ideas": {
+                "1": {
+                  "title": "If there is a need for a different column to be a primary key",
+                  "id": "84.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                  "ideas": {
+                    "1": {
+                      "title": "Basically this is a new table that can be SCANNED/QUERIED",
+                      "id": "85.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Can be chosen at any point of time",
+                  "id": "87.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              310,
+              145,
+              5
+            ]
+          }
+        },
+        "61": {
+          "title": "Dynamodb Stream",
+          "id": "9.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "A changelog of items(rows) in a table",
+              "id": "93.1eacb8d00f7f11e9817c09f9d5d9a51d",
+              "ideas": {
+                "1": {
+                  "title": "Lambda can reacts to the change log in the form of TRIGGERS",
+                  "id": "94.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                }
+              }
+            },
+            "2": {
+              "title": "24 HR TTL",
+              "id": "95.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            }
+          },
+          "attr": {
+            "parentConnector": {
+              "color": "#993300"
+            },
+            "position": [
+              515,
+              452,
+              6
+            ]
+          }
+        },
+        "71": {
+          "title": "Dynamodb Accelerator (DAX) - Dynamo Cache",
+          "id": "10.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "Once enabled writes get into Dynamo DB through DAX",
+              "id": "88.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            },
+            "2": {
+              "title": "5 min TTL",
+              "id": "89.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            },
+            "3": {
+              "title": "Caches reads and queries",
+              "id": "90.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            },
+            "4": {
+              "title": "Multi AZ",
+              "id": "91.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            },
+            "5": {
+              "title": "Upto 10 nodes ",
+              "id": "92.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            }
+          },
+          "attr": {
+            "parentConnector": {
+              "label": "DAX",
+              "color": "#0000FF"
+            },
+            "position": [
+              118,
+              673,
+              7
+            ]
+          }
+        },
+        "-1": {
+          "title": "Security",
+          "id": "12.2c6502e00ece11e980bbb1d7b6aa2462",
+          "attr": {
+            "parentConnector": {
+              "color": "#FF6600"
+            },
+            "position": [
+              431,
+              -1,
+              3
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "VPC enabled , so dynamo db can exist inside a subnet",
+              "id": "96.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            },
+            "2": {
+              "title": "Entirely controlled by IAM",
+              "id": "97.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            }
+          }
+        },
+        "-2": {
+          "title": "Pricing",
+          "id": "13.2c6502e00ece11e980bbb1d7b6aa2462"
+        },
+        "-0.5": {
+          "title": "API",
+          "id": "4.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "Write",
+              "id": "26.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "PutItem",
+                  "id": "29.b524a4000ece11e9bb44df9b486df96d"
+                },
+                "2": {
+                  "title": "UpdateItem",
+                  "id": "30.b524a4000ece11e9bb44df9b486df96d"
+                },
+                "3": {
+                  "title": "ConditionalWrites",
+                  "id": "31.b524a4000ece11e9bb44df9b486df96d"
+                },
+                "4": {
+                  "title": "BatchWrites",
+                  "id": "33.b524a4000ece11e9bb44df9b486df96d",
+                  "ideas": {
+                    "1": {
+                      "title": "Upto 25 items or",
+                      "id": "34.b524a4000ece11e9bb44df9b486df96d"
+                    },
+                    "2": {
+                      "title": "16MB max or",
+                      "id": "35.b524a4000ece11e9bb44df9b486df96d"
+                    },
+                    "3": {
+                      "title": "400KB / item",
+                      "id": "37.b524a4000ece11e9bb44df9b486df96d"
+                    },
+                    "4": {
+                      "title": "Failure is possible and we need to handle it",
+                      "id": "40.b524a4000ece11e9bb44df9b486df96d"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "position": [
+                  204,
+                  -412,
+                  3
+                ]
+              }
+            },
+            "2": {
+              "title": "Read",
+              "id": "27.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "Query",
+                  "id": "41.b524a4000ece11e9bb44df9b486df96d",
+                  "ideas": {
+                    "1": {
+                      "title": "Needs PRIMARY KEY/PARTITION KEY",
+                      "id": "44.b524a4000ece11e9bb44df9b486df96d",
+                      "ideas": {}
+                    },
+                    "2": {
+                      "title": "Projection Expression to select only columns we need",
+                      "id": "46.b524a4000ece11e9bb44df9b486df96d"
+                    },
+                    "3": {
+                      "title": "FilterExpression for where clause",
+                      "id": "80.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Scan ( InEfficient)",
+                  "id": "43.b524a4000ece11e9bb44df9b486df96d",
+                  "ideas": {
+                    "1": {
+                      "title": "Consumes lot of RCU",
+                      "id": "53.b524a4000ece11e9bb44df9b486df96d"
+                    },
+                    "2": {
+                      "title": "Use Parallel Scan strategy",
+                      "id": "54.b524a4000ece11e9bb44df9b486df96d"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Batch Reads",
+                  "id": "48.b524a4000ece11e9bb44df9b486df96d",
+                  "ideas": {
+                    "1": {
+                      "title": "Upto 100 items or 16 MB Max",
+                      "id": "49.b524a4000ece11e9bb44df9b486df96d"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Can read from a Table or Index",
+                  "id": "55.b524a4000ece11e9bb44df9b486df96d"
+                }
+              },
+              "attr": {
+                "position": [
+                  406,
+                  -14,
+                  2
+                ]
+              }
+            },
+            "3": {
+              "title": "Delete",
+              "id": "28.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "DeleteItem",
+                  "id": "50.b524a4000ece11e9bb44df9b486df96d"
+                },
+                "2": {
+                  "title": "DeleteTable",
+                  "id": "51.b524a4000ece11e9bb44df9b486df96d"
+                }
+              },
+              "attr": {
+                "position": [
+                  408,
+                  303,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              210,
+              -160,
+              1
+            ]
+          }
+        },
+        "-12": {
+          "title": "Throughput",
+          "id": "7.2c6502e00ece11e980bbb1d7b6aa2462",
+          "ideas": {
+            "1": {
+              "title": "WCU",
+              "id": "59.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "1 WCU = 1 write/sec for a 1KB item",
+                  "id": "62.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                },
+                "2": {
+                  "title": "examples",
+                  "id": "63.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                  "ideas": {
+                    "1": {
+                      "title": "10 objs of 2 Kb will consumes 20 WCU",
+                      "id": "64.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                    },
+                    "2": {
+                      "title": "6 objs of 4.5kb ( round off this ) will consume 30 WCU",
+                      "id": "65.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "RCU",
+              "id": "60.b524a4000ece11e9bb44df9b486df96d",
+              "ideas": {
+                "1": {
+                  "title": "types",
+                  "id": "66.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                  "ideas": {
+                    "1": {
+                      "title": "Strongly Consistent",
+                      "id": "67.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                      "ideas": {
+                        "1": {
+                          "title": "1 read/sec for 4kb item",
+                          "id": "69.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                          "ideas": {
+                            "1": {
+                              "title": "example",
+                              "id": "71.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                              "ideas": {
+                                "1": {
+                                  "title": "10 scr/sec for 4kb  = 10 * 4/4 = 10 RCU",
+                                  "id": "72.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Eventually Consistent",
+                      "id": "68.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                      "ideas": {
+                        "1": {
+                          "title": "2 reads/sec for 4kb item",
+                          "id": "70.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                          "ideas": {
+                            "2": {
+                              "title": "example",
+                              "id": "74.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                              "attr": {},
+                              "ideas": {
+                                "1": {
+                                  "title": "16 ecr/sec for 12kb =  16/2 * 12/4 = 24 RCU",
+                                  "id": "73.1eacb8d00f7f11e9817c09f9d5d9a51d",
+                                  "ideas": {},
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "10 ecr for 6kb ( round this ) = 10/2 * 8/4 = 10 RCU",
+                                  "id": "78.1eacb8d00f7f11e9817c09f9d5d9a51d"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "C = Capacity",
+              "id": "61.1eacb8d00f7f11e9817c09f9d5d9a51d"
+            }
+          },
+          "attr": {
+            "position": [
+              141,
+              327,
+              2
+            ],
+            "parentConnector": {
+              "color": "#FF0000"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Dynamo Db",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546538597414,
+      "title": "Dynamo Db",
+      "description": "MindMup mind map: Dynamo Db",
+      "slug": "dynamo_db",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

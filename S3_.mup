@@ -1,0 +1,696 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "S3\n",
+      "id": 1,
+      "attr": {
+        "position": [
+          -13,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "2": {
+          "title": "Components",
+          "id": "15.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "Buckets",
+              "id": "2.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "Naming Standards",
+                  "id": "3.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "3-63",
+                      "id": "4.5f439e201daf11e999a59d97755b86ec"
+                    },
+                    "2": {
+                      "title": "only lower case",
+                      "id": "5.5f439e201daf11e999a59d97755b86ec"
+                    },
+                    "3": {
+                      "title": "no underscores",
+                      "id": "6.5f439e201daf11e999a59d97755b86ec"
+                    },
+                    "4": {
+                      "title": "Start with number or name",
+                      "id": "8.5f439e201daf11e999a59d97755b86ec"
+                    },
+                    "5": {
+                      "title": "Globally Unique name",
+                      "id": "9.5f439e201daf11e999a59d97755b86ec"
+                    },
+                    "6": {
+                      "title": "But are defaulted to a Region",
+                      "id": "10.5f439e201daf11e999a59d97755b86ec"
+                    }
+                  }
+                }
+              },
+              "attr": {}
+            },
+            "2": {
+              "title": "Objects",
+              "id": "11.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "Max 5TB",
+                  "id": "12.5f439e201daf11e999a59d97755b86ec"
+                },
+                "2": {
+                  "title": "Uses Mulitpart Upload",
+                  "id": "13.5f439e201daf11e999a59d97755b86ec"
+                }
+              },
+              "attr": {}
+            },
+            "3": {
+              "title": "Metadata",
+              "id": "16.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "KV pairs",
+                  "id": "17.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {}
+                }
+              }
+            },
+            "4": {
+              "title": "Tags",
+              "id": "20.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "Max 10",
+                  "id": "21.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "For billing",
+                      "id": "22.5f439e201daf11e999a59d97755b86ec"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              129,
+              -706,
+              5
+            ]
+          }
+        },
+        "3": {
+          "title": "Encryption",
+          "id": "27.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "4 methods",
+              "id": "28.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "SSE-AES",
+                  "id": "29.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "AWS managed",
+                      "id": "33.5f439e201daf11e999a59d97755b86ec",
+                      "ideas": {
+                        "1": {
+                          "title": "Header value AES:256",
+                          "id": "34.5f439e201daf11e999a59d97755b86ec"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "SSE-KMS",
+                  "id": "30.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "Header Value AES:KMS",
+                      "id": "36.5f439e201daf11e999a59d97755b86ec"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "SSE-CS",
+                  "id": "31.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "User provides the key",
+                      "id": "37.5f439e201daf11e999a59d97755b86ec"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Client Side Encryption",
+                  "id": "32.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "Using S3 Encryption SDK",
+                      "id": "38.5f439e201daf11e999a59d97755b86ec",
+                      "ideas": {
+                        "1": {
+                          "title": "All client side",
+                          "id": "39.5f439e201daf11e999a59d97755b86ec"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "x:amz:serversideencryption header",
+              "id": "35.5f439e201daf11e999a59d97755b86ec"
+            },
+            "3": {
+              "title": "Will be set at the bucket level",
+              "id": "40.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "once set and uploaded without the header, automatically encryption is set",
+                  "id": "41.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              193,
+              -370,
+              6
+            ]
+          }
+        },
+        "4": {
+          "title": "Security",
+          "id": "48.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "User Based",
+              "id": "49.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "IAM",
+                  "id": "50.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            },
+            "2": {
+              "title": "Bucket Based",
+              "id": "52.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "Like forcing encryption",
+                  "id": "54.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "like, if the header is null or header encryption values is wrong then fail the upload",
+                      "id": "55.5f439e201daf11e999a59d97755b86ec"
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "ACL ( Less Popular)",
+              "id": "53.5f439e201daf11e999a59d97755b86ec"
+            },
+            "4": {
+              "title": "VPC enabled",
+              "id": "56.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "So instances without WWW can still query your objects",
+                  "id": "57.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            },
+            "5": {
+              "title": "MFA to delete objects",
+              "id": "58.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {}
+            },
+            "6": {
+              "title": "Cloud trail to track API calls",
+              "id": "60.5f439e201daf11e999a59d97755b86ec"
+            }
+          },
+          "attr": {
+            "position": [
+              252,
+              7,
+              7
+            ]
+          }
+        },
+        "-1": {
+          "title": "Versioning",
+          "id": "23.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "If Versioning was started later on , the older objects will have version as NULL",
+              "id": "24.5f439e201daf11e999a59d97755b86ec"
+            },
+            "2": {
+              "title": "Done at Bucket level",
+              "id": "25.5f439e201daf11e999a59d97755b86ec"
+            },
+            "3": {
+              "title": "During versioning DELETE is just a SOFT delete",
+              "id": "26.5f439e201daf11e999a59d97755b86ec"
+            }
+          },
+          "attr": {
+            "position": [
+              371,
+              -575,
+              1
+            ]
+          }
+        },
+        "-2": {
+          "title": "s3-website",
+          "id": "42.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "used for hosting Static websites",
+              "id": "43.5f439e201daf11e999a59d97755b86ec"
+            },
+            "2": {
+              "title": "Format - <bucketname>-s3-website<.or->aws-regionname.amazonaws.com",
+              "id": "44.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "We need to give Public access to GET using the Bucket policies",
+                  "id": "47.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            },
+            "3": {
+              "title": "AWS CORS",
+              "id": "45.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "In order to allow only known domains to query your objects",
+                  "id": "46.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              311,
+              -354,
+              2
+            ]
+          }
+        },
+        "-3": {
+          "title": "Consistency Model",
+          "id": "61.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "Read after write consistency",
+              "id": "62.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "PUT and then GET",
+                  "id": "64.5f439e201daf11e999a59d97755b86ec",
+                  "ideas": {
+                    "1": {
+                      "title": "works",
+                      "id": "65.5f439e201daf11e999a59d97755b86ec",
+                      "ideas": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "GET, Then PUT, then GET might not",
+                  "id": "68.5f439e201daf11e999a59d97755b86ec"
+                },
+                "3": {
+                  "title": "FOR NEW PUTS",
+                  "id": "70.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            },
+            "2": {
+              "title": "Eventually consistency",
+              "id": "63.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "For Deletes and PUTs on existing objects",
+                  "id": "71.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              289,
+              -57,
+              3
+            ]
+          }
+        },
+        "-13": {
+          "title": "Performance",
+          "id": "72.5f439e201daf11e999a59d97755b86ec",
+          "ideas": {
+            "1": {
+              "title": "SSE-KMS slow because of KMS api limits",
+              "id": "73.5f439e201daf11e999a59d97755b86ec"
+            },
+            "2": {
+              "title": "Randomize Prefix for better partitions",
+              "id": "75.5f439e201daf11e999a59d97755b86ec"
+            },
+            "3": {
+              "title": "Cloud Front for S3 cache",
+              "id": "76.5f439e201daf11e999a59d97755b86ec"
+            },
+            "4": {
+              "title": "S3 Transfer Acceleration for faster S3 upload",
+              "id": "77.5f439e201daf11e999a59d97755b86ec",
+              "ideas": {
+                "1": {
+                  "title": "Edge locations",
+                  "id": "78.5f439e201daf11e999a59d97755b86ec"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              419,
+              226,
+              4
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "S3\n",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548098786761,
+      "title": "S3",
+      "description": "MindMup mind map: S3",
+      "slug": "s3_",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

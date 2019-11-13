@@ -1,0 +1,449 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "AWS CLI",
+      "id": 1,
+      "attr": {
+        "position": [
+          -30,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Setting up in the machine",
+          "id": "2.26cd1c601b2f11e99f38ebe65900dfc4",
+          "ideas": {
+            "1": {
+              "title": "run \"aws configure\"",
+              "id": "3.26cd1c601b2f11e99f38ebe65900dfc4",
+              "ideas": {
+                "1": {
+                  "title": "provide the ID",
+                  "id": "4.26cd1c601b2f11e99f38ebe65900dfc4"
+                },
+                "2": {
+                  "title": "secure key",
+                  "id": "5.26cd1c601b2f11e99f38ebe65900dfc4"
+                },
+                "3": {
+                  "title": "aws env",
+                  "id": "6.26cd1c601b2f11e99f38ebe65900dfc4"
+                },
+                "4": {
+                  "title": "format",
+                  "id": "7.26cd1c601b2f11e99f38ebe65900dfc4"
+                }
+              }
+            },
+            "2": {
+              "title": "stored under \"./aws\"",
+              "id": "8.26cd1c601b2f11e99f38ebe65900dfc4",
+              "ideas": {
+                "1": {
+                  "title": "Has 2 folders",
+                  "id": "9.26cd1c601b2f11e99f38ebe65900dfc4",
+                  "ideas": {
+                    "1": {
+                      "title": "Config",
+                      "id": "10.26cd1c601b2f11e99f38ebe65900dfc4",
+                      "ideas": {}
+                    },
+                    "2": {
+                      "title": "Credentials",
+                      "id": "12.26cd1c601b2f11e99f38ebe65900dfc4"
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "Setting up multiple accounts",
+              "id": "34.33380e901da211e993bf65d9db022725",
+              "ideas": {
+                "1": {
+                  "title": "profiles",
+                  "id": "35.33380e901da211e993bf65d9db022725",
+                  "ideas": {
+                    "1": {
+                      "title": "aws configure --profile <PROFILE NAME>",
+                      "id": "36.33380e901da211e993bf65d9db022725",
+                      "ideas": {
+                        "1": {
+                          "title": "While executing any S3 command now on we need to provide       the      --profile <NAME> command",
+                          "id": "37.33380e901da211e993bf65d9db022725",
+                          "attr": {
+                            "style": {
+                              "width": 258
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Dry Run",
+          "id": "19.3ffff2001d9d11e98f21fd562cdc9a0a",
+          "ideas": {
+            "1": {
+              "title": "To Check if you had just access",
+              "id": "20.3ffff2001d9d11e98f21fd562cdc9a0a"
+            },
+            "2": {
+              "title": "--dry-run",
+              "id": "21.3ffff2001d9d11e98f21fd562cdc9a0a"
+            }
+          }
+        },
+        "-1": {
+          "title": "Attach IAM Roles",
+          "id": "13.26cd1c601b2f11e99f38ebe65900dfc4",
+          "ideas": {
+            "1": {
+              "title": "Best Practice",
+              "id": "14.26cd1c601b2f11e99f38ebe65900dfc4",
+              "ideas": {}
+            },
+            "2": {
+              "title": "When getting Access Denied Exception , it has only to do with IAM role",
+              "id": "16.26cd1c601b2f11e99f38ebe65900dfc4"
+            }
+          }
+        },
+        "-2": {
+          "title": "STS",
+          "id": "23.3ffff2001d9d11e98f21fd562cdc9a0a",
+          "ideas": {
+            "1": {
+              "title": "Decode error message",
+              "id": "24.3ffff2001d9d11e98f21fd562cdc9a0a",
+              "ideas": {}
+            },
+            "2": {
+              "title": "Syntax",
+              "id": "28.3ffff2001d9d11e98f21fd562cdc9a0a",
+              "ideas": {
+                "1": {
+                  "title": "aws sts decode-authorization-message --encoded-message <VALUE>",
+                  "id": "30.3ffff2001d9d11e98f21fd562cdc9a0a",
+                  "ideas": {
+                    "1": {
+                      "title": "Once applied will produce a JSON",
+                      "id": "32.3ffff2001d9d11e98f21fd562cdc9a0a"
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "You need to have access to run the command in IAM",
+              "id": "31.3ffff2001d9d11e98f21fd562cdc9a0a"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "AWS CLI",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548091951608,
+      "title": "AWS CLI",
+      "description": "MindMup mind map: AWS CLI",
+      "slug": "aws_cli",
+      "gaClientCode": false
+    }
+  },
+  "links": [],
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

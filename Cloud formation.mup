@@ -1,0 +1,552 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Cloud formation",
+      "id": 1,
+      "attr": {
+        "position": [
+          -55,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "2": {
+          "title": "Deploy Modes",
+          "id": "12.30d0f9300d0511e9bfc325f9a184b231",
+          "ideas": {
+            "1": {
+              "title": "Manual ",
+              "id": "13.30d0f9300d0511e9bfc325f9a184b231",
+              "ideas": {
+                "1": {
+                  "title": "Can be used from Drag and Drop Console",
+                  "id": "7.30d0f9300d0511e9bfc325f9a184b231"
+                }
+              }
+            },
+            "2": {
+              "title": "Automated",
+              "id": "14.30d0f9300d0511e9bfc325f9a184b231",
+              "ideas": {
+                "1": {
+                  "title": "using YAML(Preferred or JSON)",
+                  "id": "15.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Means order doesnt matter, AWS will take care of the same",
+                      "id": "33.30d0f9300d0511e9bfc325f9a184b231"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "Templating Language",
+          "id": "21.30d0f9300d0511e9bfc325f9a184b231",
+          "ideas": {
+            "1": {
+              "title": "Declarative in Nature",
+              "id": "22.30d0f9300d0511e9bfc325f9a184b231"
+            },
+            "2": {
+              "title": "Building Blocks",
+              "id": "23.30d0f9300d0511e9bfc325f9a184b231",
+              "ideas": {
+                "1": {
+                  "title": "Resources",
+                  "id": "25.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Mandatory",
+                      "id": "35.30d0f9300d0511e9bfc325f9a184b231"
+                    },
+                    "2": {
+                      "title": "Format AWS::<AWS-PRODUCT-NAME>::TYPE",
+                      "id": "58.30d0f9300d0511e9bfc325f9a184b231"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Parameters",
+                  "id": "26.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Variables, needed to be provided when creating a stack",
+                      "id": "36.30d0f9300d0511e9bfc325f9a184b231"
+                    },
+                    "3": {
+                      "title": "Types",
+                      "id": "42.30d0f9300d0511e9bfc325f9a184b231",
+                      "ideas": {
+                        "1": {
+                          "title": "String",
+                          "id": "43.30d0f9300d0511e9bfc325f9a184b231"
+                        },
+                        "2": {
+                          "title": "Number",
+                          "id": "44.30d0f9300d0511e9bfc325f9a184b231"
+                        },
+                        "3": {
+                          "title": "List<Type>",
+                          "id": "45.30d0f9300d0511e9bfc325f9a184b231"
+                        },
+                        "4": {
+                          "title": "Delimitted Types",
+                          "id": "46.30d0f9300d0511e9bfc325f9a184b231"
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "Constraints",
+                      "id": "47.30d0f9300d0511e9bfc325f9a184b231",
+                      "ideas": {
+                        "1": {
+                          "title": "Min/Max Value and Length",
+                          "id": "48.30d0f9300d0511e9bfc325f9a184b231"
+                        },
+                        "2": {
+                          "title": "Regex",
+                          "id": "49.30d0f9300d0511e9bfc325f9a184b231"
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "AWS provided",
+                      "id": "50.30d0f9300d0511e9bfc325f9a184b231",
+                      "ideas": {
+                        "1": {
+                          "title": "Account Id, Region, StackID, StackName etc",
+                          "id": "51.30d0f9300d0511e9bfc325f9a184b231"
+                        }
+                      }
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Mappings",
+                  "id": "27.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Key Value Pair ( Constants)",
+                      "id": "37.30d0f9300d0511e9bfc325f9a184b231",
+                      "ideas": {
+                        "1": {
+                          "title": "Can be accessed in [KeyName, TopLevelKey, SecondLevelKey] format. ",
+                          "id": "38.30d0f9300d0511e9bfc325f9a184b231"
+                        }
+                      }
+                    }
+                  }
+                },
+                "5": {
+                  "title": "Metadata",
+                  "id": "29.30d0f9300d0511e9bfc325f9a184b231"
+                },
+                "6": {
+                  "title": "References",
+                  "id": "30.30d0f9300d0511e9bfc325f9a184b231"
+                },
+                "7": {
+                  "title": "Functions",
+                  "id": "52.30d0f9300d0511e9bfc325f9a184b231"
+                },
+                "4.5": {
+                  "title": "Conditional",
+                  "id": "34.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "All Logical Operations",
+                      "id": "40.30d0f9300d0511e9bfc325f9a184b231"
+                    }
+                  }
+                },
+                "2.5": {
+                  "title": "Outputs",
+                  "id": "28.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Must be exported in order to be imported. Used for cross-stacking",
+                      "id": "39.30d0f9300d0511e9bfc325f9a184b231"
+                    }
+                  }
+                },
+                "2.25": {
+                  "title": "Functions",
+                  "id": "31.30d0f9300d0511e9bfc325f9a184b231"
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "RollBack",
+          "id": "54.30d0f9300d0511e9bfc325f9a184b231",
+          "ideas": {
+            "1": {
+              "title": "Default Failure - Rollback to previous working version",
+              "id": "56.30d0f9300d0511e9bfc325f9a184b231"
+            }
+          }
+        },
+        "5": {
+          "title": "GetAtt is a important command to get properties out of AWS resources",
+          "id": "62.30d0f9300d0511e9bfc325f9a184b231"
+        },
+        "-1": {
+          "title": "Terminologies",
+          "id": "8.30d0f9300d0511e9bfc325f9a184b231",
+          "ideas": {
+            "1": {
+              "title": "Stack is like an object",
+              "id": "9.30d0f9300d0511e9bfc325f9a184b231",
+              "ideas": {
+                "1": {
+                  "title": "Types",
+                  "id": "17.30d0f9300d0511e9bfc325f9a184b231",
+                  "ideas": {
+                    "1": {
+                      "title": "Network Stack",
+                      "id": "18.30d0f9300d0511e9bfc325f9a184b231"
+                    },
+                    "2": {
+                      "title": "App Stack",
+                      "id": "19.30d0f9300d0511e9bfc325f9a184b231"
+                    },
+                    "3": {
+                      "title": "VPC Stack",
+                      "id": "20.30d0f9300d0511e9bfc325f9a184b231"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Can be given a name",
+                  "id": "59.30d0f9300d0511e9bfc325f9a184b231"
+                }
+              }
+            },
+            "0.5": {
+              "title": "Template is like a Class",
+              "id": "11.30d0f9300d0511e9bfc325f9a184b231",
+              "attr": {
+                "position": [
+                  114,
+                  -82,
+                  1
+                ]
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "Infrastructure As Code",
+          "id": "3.30d0f9300d0511e9bfc325f9a184b231",
+          "ideas": {},
+          "attr": {}
+        },
+        "-3": {
+          "title": "Templates must be loaded to S3 before use",
+          "id": "61.30d0f9300d0511e9bfc325f9a184b231"
+        }
+      }
+    }
+  },
+  "title": "Cloud formation",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546276360393,
+      "title": "Cloud formation",
+      "description": "MindMup mind map: Cloud formation",
+      "slug": "cloud_formation",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

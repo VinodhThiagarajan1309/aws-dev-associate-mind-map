@@ -1,0 +1,812 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Kinesis",
+      "id": 1,
+      "attr": {
+        "position": [
+          -556,
+          -723,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Types",
+          "id": "2.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "Kinesis Streams AKA Kinesis",
+              "id": "4.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "Receives Data from",
+                  "id": "8.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "IOT",
+                      "id": "9.47dfc6a0039c11e9890e85eef2e6ae7f"
+                    },
+                    "2": {
+                      "title": "Metrics/Logs",
+                      "id": "10.47dfc6a0039c11e9890e85eef2e6ae7f"
+                    },
+                    "3": {
+                      "title": "ClickStreams",
+                      "id": "11.47dfc6a0039c11e9890e85eef2e6ae7f"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Kinesis Analytics",
+              "id": "5.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "Works on Kinesis Streams",
+                  "id": "13.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "SQL like Analytics",
+                      "id": "14.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Use Cases",
+                  "id": "16.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "Alerts",
+                      "id": "17.47dfc6a0039c11e9890e85eef2e6ae7f"
+                    },
+                    "2": {
+                      "title": "Fraud Detection",
+                      "id": "18.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {}
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "Kinesis Firehose",
+              "id": "7.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "To Long Time Storage",
+                  "id": "21.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "Stored to",
+                      "id": "22.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "AWS S3",
+                          "id": "23.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "2": {
+                          "title": "AWS RedShift",
+                          "id": "24.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "3": {
+                          "title": "Elastic Search",
+                          "id": "25.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "2.5": {
+                          "title": "Splunk",
+                          "id": "121.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "Kinesis Streams AKA Kinesis",
+      "id": "28.47dfc6a0039c11e9890e85eef2e6ae7f",
+      "attr": {
+        "position": [
+          -517,
+          -149,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Producers",
+          "id": "29.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "Produce Message",
+              "id": "33.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "Message Entities",
+                  "id": "35.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "Message Body",
+                      "id": "36.47dfc6a0039c11e9890e85eef2e6ae7f"
+                    },
+                    "2": {
+                      "title": "Message Key",
+                      "id": "37.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "Hashed",
+                          "id": "39.47dfc6a0039c11e9890e85eef2e6ae7f",
+                          "ideas": {
+                            "3": {
+                              "title": "AKA",
+                              "id": "76.47dfc6a0039c11e9890e85eef2e6ae7f",
+                              "ideas": {
+                                "1": {
+                                  "title": "Partition key",
+                                  "id": "40.47dfc6a0039c11e9890e85eef2e6ae7f",
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "Shard id",
+                                  "id": "41.47dfc6a0039c11e9890e85eef2e6ae7f",
+                                  "attr": {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Must be as unique or diverse as possible",
+                          "id": "44.47dfc6a0039c11e9890e85eef2e6ae7f",
+                          "ideas": {
+                            "1": {
+                              "title": "else leads to",
+                              "id": "45.47dfc6a0039c11e9890e85eef2e6ae7f",
+                              "ideas": {
+                                "1": {
+                                  "title": "HOT Partition",
+                                  "id": "47.47dfc6a0039c11e9890e85eef2e6ae7f",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "Means all data/ most data gets into same shard",
+                                      "id": "49.47dfc6a0039c11e9890e85eef2e6ae7f"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "After Writing",
+                      "id": "80.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "ShardID ( Which shard the message went to ) and Sequence Number are returned",
+                          "id": "81.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      30.200000000000045,
+                      225.60000000000002,
+                      1
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "11": {
+          "title": "Consumers",
+          "id": "31.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "KCL - Kinesis Client Library for reading",
+              "id": "66.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "3": {
+                  "title": "Uses Dynamo DB to",
+                  "id": "69.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "to store Offsets",
+                      "id": "67.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "To distribute load to workers",
+                      "id": "68.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "attr": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              86,
+              289.6,
+              1
+            ]
+          }
+        },
+        "12": {
+          "title": "Security",
+          "id": "117.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "HTTPS for Data in Flight",
+              "id": "118.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "2": {
+              "title": " SSE using KMS for Data in Rest",
+              "id": "119.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "3": {
+              "title": "VPC possible",
+              "id": "120.47dfc6a0039c11e9890e85eef2e6ae7f"
+            }
+          }
+        },
+        "-1": {
+          "title": "Facts",
+          "id": "32.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "1 day default - 7 days max  ( SQS 4 days default- 14 days max )",
+              "id": "63.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "2": {
+              "title": "Kafka Alternate",
+              "id": "64.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "3": {
+              "title": "Data is immutable and no deletion",
+              "id": "65.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "4": {
+              "title": "Triple Replication by default",
+              "id": "122.ab858e4003a311e9890e85eef2e6ae7f"
+            }
+          }
+        },
+        "-2": {
+          "title": "Shard",
+          "id": "50.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "Multiple Shards makes the stream",
+              "id": "52.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "2": {
+              "title": "Billing is per provisioned shard",
+              "id": "54.47dfc6a0039c11e9890e85eef2e6ae7f"
+            },
+            "3": {
+              "title": "Write",
+              "id": "56.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "1MB/sec or 1000 messages/sec is limit",
+                  "id": "57.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Too much load - ProvisionedThroughputExceeded Issue",
+                  "id": "62.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "fix",
+                      "id": "70.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "Increase provisioned Shards",
+                          "id": "72.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "2": {
+                          "title": "Exponential Back Off",
+                          "id": "73.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "3": {
+                          "title": "Avoid Hot Partition",
+                          "id": "74.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "Read",
+              "id": "58.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "2MB/sec or 2000 messages/sec is limit",
+                  "id": "59.47dfc6a0039c11e9890e85eef2e6ae7f"
+                }
+              }
+            },
+            "5": {
+              "title": "200 shards max per account",
+              "id": "77.47dfc6a0039c11e9890e85eef2e6ae7f"
+            }
+          },
+          "attr": {
+            "position": [
+              201,
+              317,
+              2
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "title": "Kinesis CLI",
+      "id": "82.47dfc6a0039c11e9890e85eef2e6ae7f",
+      "attr": {
+        "position": [
+          -957,
+          638,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "List Streams",
+          "id": "83.47dfc6a0039c11e9890e85eef2e6ae7f"
+        },
+        "11": {
+          "title": "Describe Stream",
+          "id": "84.47dfc6a0039c11e9890e85eef2e6ae7f"
+        },
+        "-1": {
+          "title": "PutRecord",
+          "id": "85.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "inputs",
+              "id": "86.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "SreamName",
+                  "id": "88.47dfc6a0039c11e9890e85eef2e6ae7f"
+                },
+                "2": {
+                  "title": "data",
+                  "id": "89.47dfc6a0039c11e9890e85eef2e6ae7f"
+                },
+                "3": {
+                  "title": "Partition Key",
+                  "id": "90.47dfc6a0039c11e9890e85eef2e6ae7f"
+                }
+              }
+            },
+            "2": {
+              "title": "Output",
+              "id": "91.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "1": {
+                  "title": "ShardId",
+                  "id": "92.47dfc6a0039c11e9890e85eef2e6ae7f"
+                },
+                "2": {
+                  "title": "Sequence Number",
+                  "id": "93.47dfc6a0039c11e9890e85eef2e6ae7f"
+                }
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "GetRecord",
+          "id": "95.47dfc6a0039c11e9890e85eef2e6ae7f",
+          "ideas": {
+            "1": {
+              "title": "Steps",
+              "id": "96.47dfc6a0039c11e9890e85eef2e6ae7f",
+              "ideas": {
+                "2": {
+                  "title": "Shard Iterator",
+                  "id": "100.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "2": {
+                      "title": "Inputs",
+                      "id": "101.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "Stream name",
+                          "id": "102.47dfc6a0039c11e9890e85eef2e6ae7f",
+                          "attr": {
+                            "style": {
+                              "fontMultiplier": 1
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Shard Id",
+                          "id": "103.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        },
+                        "1.5": {
+                          "title": "Iterator type",
+                          "id": "105.47dfc6a0039c11e9890e85eef2e6ae7f",
+                          "ideas": {
+                            "1": {
+                              "title": "At Seq num",
+                              "id": "106.47dfc6a0039c11e9890e85eef2e6ae7f"
+                            },
+                            "2": {
+                              "title": "After Seq number",
+                              "id": "107.47dfc6a0039c11e9890e85eef2e6ae7f"
+                            },
+                            "3": {
+                              "title": "TRIM (from oldest)",
+                              "id": "108.47dfc6a0039c11e9890e85eef2e6ae7f"
+                            },
+                            "4": {
+                              "title": "Latest",
+                              "id": "109.47dfc6a0039c11e9890e85eef2e6ae7f"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Output",
+                      "id": "111.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "ShardIteratorString",
+                          "id": "112.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        }
+                      }
+                    }
+                  }
+                },
+                "3": {
+                  "title": "getRecords Needs Shard Iterator String",
+                  "id": "110.47dfc6a0039c11e9890e85eef2e6ae7f",
+                  "ideas": {
+                    "1": {
+                      "title": "Lists the records",
+                      "id": "115.47dfc6a0039c11e9890e85eef2e6ae7f",
+                      "ideas": {
+                        "1": {
+                          "title": "Data is Base64 ",
+                          "id": "116.47dfc6a0039c11e9890e85eef2e6ae7f"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Kinesis",
+  "links": [
+    {
+      "ideaIdFrom": "112.47dfc6a0039c11e9890e85eef2e6ae7f",
+      "ideaIdTo": "110.47dfc6a0039c11e9890e85eef2e6ae7f",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1545233842624,
+      "title": "Kinesis",
+      "description": "MindMup mind map: Kinesis",
+      "slug": "kinesis",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

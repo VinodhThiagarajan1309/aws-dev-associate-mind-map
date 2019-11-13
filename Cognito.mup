@@ -1,0 +1,427 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Cognito",
+      "id": 1,
+      "attr": {
+        "position": [
+          -29,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "-1": {
+          "title": "Its all about giving Users an Identity so that they can interact with our apps",
+          "id": "19.27ec2160136211e9aa694151026c5d53"
+        },
+        "-0.5": {
+          "title": "Types",
+          "id": "2.27ec2160136211e9aa694151026c5d53",
+          "ideas": {
+            "13": {
+              "title": "Cognito User Pools or CUP",
+              "id": "3.27ec2160136211e9aa694151026c5d53",
+              "ideas": {
+                "1": {
+                  "title": "Its a User DB, just like Firebase and provides Sign in function for app users",
+                  "id": "7.27ec2160136211e9aa694151026c5d53",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "It provides feature to register user using id,pass and 3rd party OAuth like Google,Facebook etc",
+                  "id": "9.27ec2160136211e9aa694151026c5d53"
+                },
+                "3": {
+                  "title": "When accessed it will give back a JWT which will be sent to API Gateway",
+                  "id": "10.27ec2160136211e9aa694151026c5d53"
+                }
+              }
+            },
+            "0.5": {
+              "title": "Cognito Identity Pools or Federated Identity",
+              "id": "4.27ec2160136211e9aa694151026c5d53",
+              "attr": {
+                "position": [
+                  46,
+                  -140,
+                  1
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Providing Direct temporary Access to S3 resources",
+                  "id": "6.27ec2160136211e9aa694151026c5d53"
+                },
+                "2": {
+                  "title": "The access comes with an IAM policy",
+                  "id": "11.27ec2160136211e9aa694151026c5d53",
+                  "ideas": {}
+                },
+                "0.5": {
+                  "title": "How it Works",
+                  "id": "13.27ec2160136211e9aa694151026c5d53",
+                  "ideas": {
+                    "1": {
+                      "title": "Client  wants to access the app using CUP, Google or Facebook and they have a JWT",
+                      "id": "14.27ec2160136211e9aa694151026c5d53",
+                      "ideas": {
+                        "1": {
+                          "title": "JWT is sent to CIP",
+                          "id": "15.27ec2160136211e9aa694151026c5d53",
+                          "ideas": {
+                            "1": {
+                              "title": "CIP verifies it against the provider",
+                              "id": "16.27ec2160136211e9aa694151026c5d53",
+                              "ideas": {
+                                "1": {
+                                  "title": "Then using STS the CIP delivers the access temporarily to the client",
+                                  "id": "17.27ec2160136211e9aa694151026c5d53"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      110,
+                      -119,
+                      1
+                    ]
+                  }
+                }
+              }
+            },
+            "0.25": {
+              "title": "Cognito Sync",
+              "id": "5.27ec2160136211e9aa694151026c5d53",
+              "ideas": {
+                "1": {
+                  "title": "Deprecated and we need to use App Sync",
+                  "id": "20.27ec2160136211e9aa694151026c5d53"
+                },
+                "2": {
+                  "title": "Sync data across devices , like Onenote,Evernote etc",
+                  "id": "21.27ec2160136211e9aa694151026c5d53"
+                },
+                "3": {
+                  "title": "Can store data upto 1MB and can hold upto 20 Datasets ",
+                  "id": "22.27ec2160136211e9aa694151026c5d53"
+                },
+                "4": {
+                  "title": "Requires FIP to work",
+                  "id": "23.27ec2160136211e9aa694151026c5d53"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              248,
+              -178,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Cognito",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546965312994,
+      "title": "Cognito",
+      "description": "MindMup mind map: Cognito",
+      "slug": "cognito",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

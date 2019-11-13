@@ -1,0 +1,428 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Code Commit",
+      "id": 1,
+      "attr": {
+        "position": [
+          -46,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Like GitHub",
+          "id": "3.625c5f00136b11e9aa694151026c5d53"
+        },
+        "11": {
+          "title": "Private Repos",
+          "id": "4.625c5f00136b11e9aa694151026c5d53"
+        },
+        "21": {
+          "title": "Security",
+          "id": "5.625c5f00136b11e9aa694151026c5d53",
+          "ideas": {
+            "1": {
+              "title": "Generated from IAM console just like access keys",
+              "id": "6.625c5f00136b11e9aa694151026c5d53",
+              "ideas": {
+                "1": {
+                  "title": "Types",
+                  "id": "7.625c5f00136b11e9aa694151026c5d53",
+                  "ideas": {
+                    "1": {
+                      "title": "SSH Keys",
+                      "id": "8.625c5f00136b11e9aa694151026c5d53"
+                    },
+                    "2": {
+                      "title": "HTTPS creds ( Can see it only once just like access keys )",
+                      "id": "9.625c5f00136b11e9aa694151026c5d53",
+                      "ideas": {
+                        "1": {
+                          "title": "Max 2 sets",
+                          "id": "10.625c5f00136b11e9aa694151026c5d53"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Notifications",
+          "id": "11.625c5f00136b11e9aa694151026c5d53",
+          "ideas": {
+            "1": {
+              "title": "Types",
+              "id": "12.625c5f00136b11e9aa694151026c5d53",
+              "ideas": {
+                "1": {
+                  "title": "Triggers",
+                  "id": "13.625c5f00136b11e9aa694151026c5d53",
+                  "ideas": {
+                    "1": {
+                      "title": "on",
+                      "id": "21.625c5f00136b11e9aa694151026c5d53",
+                      "ideas": {
+                        "1": {
+                          "title": "Create Branch",
+                          "id": "22.625c5f00136b11e9aa694151026c5d53"
+                        },
+                        "2": {
+                          "title": "Push to Branch",
+                          "id": "23.625c5f00136b11e9aa694151026c5d53"
+                        },
+                        "3": {
+                          "title": "Delete a branch",
+                          "id": "24.625c5f00136b11e9aa694151026c5d53"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "This can be the same EVENT based SNS topic but good to have a separate topic",
+                      "id": "25.625c5f00136b11e9aa694151026c5d53"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Event Based",
+                  "id": "14.625c5f00136b11e9aa694151026c5d53",
+                  "ideas": {
+                    "1": {
+                      "title": "Need to be setup during repo creation",
+                      "id": "15.625c5f00136b11e9aa694151026c5d53",
+                      "ideas": {
+                        "1": {
+                          "title": "This will create Cloud Watch Event Rule and when the Event happens pushes the email out using a SNS topic ( this needs to be setup  during repo creation)",
+                          "id": "16.625c5f00136b11e9aa694151026c5d53",
+                          "ideas": {
+                            "1": {
+                              "title": "Triggered for ",
+                              "id": "17.625c5f00136b11e9aa694151026c5d53",
+                              "ideas": {
+                                "1": {
+                                  "title": "PR",
+                                  "id": "18.625c5f00136b11e9aa694151026c5d53"
+                                },
+                                "2": {
+                                  "title": "PR Comments",
+                                  "id": "19.625c5f00136b11e9aa694151026c5d53"
+                                },
+                                "3": {
+                                  "title": "Commit Comments",
+                                  "id": "20.625c5f00136b11e9aa694151026c5d53"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Code Commit",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546969041146,
+      "title": "Code Commit",
+      "description": "MindMup mind map: Code Commit",
+      "slug": "code_commit",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

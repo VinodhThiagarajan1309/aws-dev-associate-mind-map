@@ -1,0 +1,478 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "EBS",
+      "id": 1,
+      "attr": {
+        "position": [
+          -82,
+          -28,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Locked to AZ",
+          "id": "2.38ca0f8020d511e98eac9197e9d3bd11",
+          "ideas": {
+            "1": {
+              "title": "Which means eg. US-EAST-1-A",
+              "id": "3.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "Cannot be accessed even within Region",
+                  "id": "4.38ca0f8020d511e98eac9197e9d3bd11",
+                  "ideas": {
+                    "1": {
+                      "title": "Snapshot can help",
+                      "id": "5.38ca0f8020d511e98eac9197e9d3bd11",
+                      "ideas": {
+                        "1": {
+                          "title": "Billed only for the data size",
+                          "id": "6.38ca0f8020d511e98eac9197e9d3bd11"
+                        },
+                        "2": {
+                          "title": "Back Up Strategy",
+                          "id": "7.38ca0f8020d511e98eac9197e9d3bd11"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              51,
+              -201,
+              2
+            ]
+          }
+        },
+        "2": {
+          "title": "Provision",
+          "id": "14.38ca0f8020d511e98eac9197e9d3bd11",
+          "ideas": {
+            "1": {
+              "title": "GBs",
+              "id": "15.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "Billed for whole capacity just not storage",
+                  "id": "18.38ca0f8020d511e98eac9197e9d3bd11",
+                  "ideas": {
+                    "1": {
+                      "title": "Can be resized on the FLY",
+                      "id": "19.38ca0f8020d511e98eac9197e9d3bd11"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "IOPS",
+              "id": "16.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {}
+            }
+          },
+          "attr": {
+            "position": [
+              129,
+              12,
+              6
+            ]
+          }
+        },
+        "-1": {
+          "title": "Facts",
+          "id": "8.38ca0f8020d511e98eac9197e9d3bd11",
+          "ideas": {
+            "1": {
+              "title": "When EC2 terminated Root volume is detroyed",
+              "id": "9.38ca0f8020d511e98eac9197e9d3bd11"
+            },
+            "2": {
+              "title": "EBS can be attached",
+              "id": "10.38ca0f8020d511e98eac9197e9d3bd11"
+            },
+            "3": {
+              "title": "EC2 can have multiple attached to them",
+              "id": "11.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "But 1-1 mapping for EBS",
+                  "id": "12.38ca0f8020d511e98eac9197e9d3bd11"
+                }
+              }
+            },
+            "4": {
+              "title": "Instance Store type EC2 has Physical Drive so will loose data anyway",
+              "id": "30.38ca0f8020d511e98eac9197e9d3bd11"
+            },
+            "0.5": {
+              "title": "They are Network Drive and not Physical",
+              "id": "31.38ca0f8020d511e98eac9197e9d3bd11"
+            }
+          },
+          "attr": {
+            "position": [
+              321,
+              -164,
+              4
+            ]
+          }
+        },
+        "-2": {
+          "title": "Types",
+          "id": "20.38ca0f8020d511e98eac9197e9d3bd11",
+          "ideas": {
+            "1": {
+              "title": "GP2",
+              "id": "21.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "General Purpose",
+                  "id": "26.38ca0f8020d511e98eac9197e9d3bd11"
+                }
+              }
+            },
+            "2": {
+              "title": "IO1",
+              "id": "23.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "Mission Critical",
+                  "id": "27.38ca0f8020d511e98eac9197e9d3bd11"
+                }
+              }
+            },
+            "3": {
+              "title": "STI",
+              "id": "24.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "Big Data",
+                  "id": "28.38ca0f8020d511e98eac9197e9d3bd11"
+                }
+              }
+            },
+            "4": {
+              "title": "SCI",
+              "id": "25.38ca0f8020d511e98eac9197e9d3bd11",
+              "ideas": {
+                "1": {
+                  "title": "Less Frequent Big Data",
+                  "id": "29.38ca0f8020d511e98eac9197e9d3bd11"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              132,
+              64,
+              5
+            ]
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "theme": "default",
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548443923693,
+      "title": "EBS",
+      "description": "MindMup mind map: EBS",
+      "slug": "ebs",
+      "gaClientCode": false
+    }
+  },
+  "title": "EBS",
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

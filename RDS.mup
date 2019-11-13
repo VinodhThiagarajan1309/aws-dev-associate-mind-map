@@ -1,0 +1,577 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "RDS - Relational Database Service",
+      "id": 1,
+      "attr": {
+        "position": [
+          -83,
+          -27,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Available DBS",
+          "id": "3.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "MySQL",
+              "id": "4.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "2": {
+              "title": "PostGreSQL",
+              "id": "5.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "3": {
+              "title": "Maria DB",
+              "id": "6.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "4": {
+              "title": "SQL Server",
+              "id": "7.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {}
+            },
+            "5": {
+              "title": "Aurora DB",
+              "id": "9.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "Available as",
+                  "id": "10.4f94f8c020c511e98ad4a57b258d94a6",
+                  "ideas": {
+                    "1": {
+                      "title": "MySQL",
+                      "id": "11.4f94f8c020c511e98ad4a57b258d94a6"
+                    },
+                    "2": {
+                      "title": "PostGreSQL",
+                      "id": "12.4f94f8c020c511e98ad4a57b258d94a6"
+                    },
+                    "3": {
+                      "title": "Facts",
+                      "id": "13.4f94f8c020c511e98ad4a57b258d94a6",
+                      "ideas": {
+                        "1": {
+                          "title": "5x faster in MySQL",
+                          "id": "14.4f94f8c020c511e98ad4a57b258d94a6"
+                        },
+                        "2": {
+                          "title": "3x Faster with PostGreSQL",
+                          "id": "15.4f94f8c020c511e98ad4a57b258d94a6"
+                        },
+                        "3": {
+                          "title": "15 replications",
+                          "id": "16.4f94f8c020c511e98ad4a57b258d94a6"
+                        },
+                        "4": {
+                          "title": "Costs 20% more",
+                          "id": "17.4f94f8c020c511e98ad4a57b258d94a6"
+                        },
+                        "5": {
+                          "title": "10 ms lag during Read Replicas",
+                          "id": "18.4f94f8c020c511e98ad4a57b258d94a6"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Facts",
+          "id": "41.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "By Default tied to VPC and best practice that only EC2 within that VPC has the access",
+              "id": "42.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "2": {
+              "title": "Cannot SSH into instances",
+              "id": "50.4f94f8c020c511e98ad4a57b258d94a6"
+            }
+          }
+        },
+        "3": {
+          "title": "Back Ups",
+          "id": "43.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "Happens Automatically",
+              "id": "44.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "7 day default retention",
+                  "id": "45.4f94f8c020c511e98ad4a57b258d94a6",
+                  "ideas": {
+                    "1": {
+                      "title": "Max 35 days",
+                      "id": "46.4f94f8c020c511e98ad4a57b258d94a6",
+                      "ideas": {
+                        "1": {
+                          "title": "Can reset back to a very specific time",
+                          "id": "47.4f94f8c020c511e98ad4a57b258d94a6"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Manual",
+              "id": "48.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "No retention limits",
+                  "id": "49.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Read Replicas",
+          "id": "19.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "Max 5",
+              "id": "20.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {}
+            },
+            "2": {
+              "title": "If your app is Read demanding",
+              "id": "22.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "3": {
+              "title": "Same AZ, MultiAZ, Multi Region",
+              "id": "25.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "Basically All",
+                  "id": "26.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            },
+            "4": {
+              "title": "Async Operation",
+              "id": "27.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "So eventually Consistent",
+                  "id": "28.4f94f8c020c511e98ad4a57b258d94a6",
+                  "ideas": {
+                    "1": {
+                      "title": "Hence can expect a Lag in the replicas",
+                      "id": "29.4f94f8c020c511e98ad4a57b258d94a6"
+                    }
+                  }
+                }
+              }
+            },
+            "5": {
+              "title": "Can be converter into DB",
+              "id": "31.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "6": {
+              "title": "Code needs to know about this read replica connection string",
+              "id": "33.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "So needs code change",
+                  "id": "34.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            }
+          }
+        },
+        "-0.5": {
+          "title": "MultiAZ",
+          "id": "35.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "Sync Operation",
+              "id": "36.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "Hence fast",
+                  "id": "37.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            },
+            "2": {
+              "title": "Used for DR",
+              "id": "38.4f94f8c020c511e98ad4a57b258d94a6"
+            },
+            "3": {
+              "title": "Master and Slave share same DNS and hence fall back doesnt need code change",
+              "id": "40.4f94f8c020c511e98ad4a57b258d94a6"
+            }
+          },
+          "attr": {
+            "position": [
+              143,
+              -296,
+              1
+            ]
+          }
+        },
+        "-2": {
+          "title": "Security",
+          "id": "51.4f94f8c020c511e98ad4a57b258d94a6",
+          "ideas": {
+            "1": {
+              "title": "@ Rest",
+              "id": "52.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "KMS , AES 256",
+                  "id": "53.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            },
+            "2": {
+              "title": "in Flight ",
+              "id": "54.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "SSL",
+                  "id": "55.4f94f8c020c511e98ad4a57b258d94a6",
+                  "ideas": {}
+                }
+              }
+            },
+            "3": {
+              "title": "Enforce SSL",
+              "id": "57.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "MySQL Query - BLAH BLAH BLAH GRANT REQUIRE SSL",
+                  "id": "58.4f94f8c020c511e98ad4a57b258d94a6"
+                },
+                "2": {
+                  "title": "PostGreSQL",
+                  "id": "59.4f94f8c020c511e98ad4a57b258d94a6",
+                  "ideas": {
+                    "1": {
+                      "title": "rds.force_ssl",
+                      "id": "60.4f94f8c020c511e98ad4a57b258d94a6",
+                      "ideas": {}
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "Connect SSL",
+              "id": "62.4f94f8c020c511e98ad4a57b258d94a6",
+              "ideas": {
+                "1": {
+                  "title": "Must have SSL Ceritificate",
+                  "id": "64.4f94f8c020c511e98ad4a57b258d94a6"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "RDS - Relational Database Service",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548438271886,
+      "title": "RDS",
+      "description": "MindMup mind map: RDS",
+      "slug": "rds",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

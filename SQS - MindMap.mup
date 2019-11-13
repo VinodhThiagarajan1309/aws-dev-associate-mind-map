@@ -1,0 +1,856 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "SQS",
+      "id": 1,
+      "attr": {
+        "position": [
+          -262,
+          642,
+          1
+        ],
+        "style": {
+          "width": 50
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Types",
+          "id": 5,
+          "ideas": {
+            "1": {
+              "title": "Standard Queue",
+              "id": 6
+            },
+            "2": {
+              "title": "Delay Queue",
+              "id": 7,
+              "ideas": {
+                "1": {
+                  "title": "achieved @ ",
+                  "id": 69,
+                  "ideas": {
+                    "1": {
+                      "title": "Queue level",
+                      "id": 70
+                    },
+                    "2": {
+                      "title": "DelaySeconds parameter",
+                      "id": 71,
+                      "ideas": {}
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      161.51562499999977,
+                      -53.750000000000114,
+                      1
+                    ]
+                  }
+                },
+                "2": {
+                  "title": "Consumers dont see it for specified time",
+                  "id": "84.69d97a70028f11e9a94c41d2a13f2d00"
+                }
+              }
+            },
+            "3": {
+              "title": "Dead Letter Queue",
+              "id": 8,
+              "ideas": {
+                "1": {
+                  "title": "Create for every queue",
+                  "id": 74
+                },
+                "2": {
+                  "title": "Receives message when",
+                  "id": 76,
+                  "ideas": {
+                    "1": {
+                      "title": "Message fails within VisibilityTimeOut enters here",
+                      "id": 75
+                    },
+                    "2": {
+                      "title": "Redrive Policy",
+                      "id": 77,
+                      "ideas": {
+                        "1": {
+                          "title": "Failing threshold set for reprocessing message",
+                          "id": 78
+                        }
+                      },
+                      "attr": {
+                        "position": [
+                          275.01562499999955,
+                          140.9999999999999,
+                          1
+                        ],
+                        "style": {
+                          "background": "#FF00FF"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "FIFO Queue",
+              "id": "88.69d97a70028f11e9a94c41d2a13f2d00",
+              "ideas": {
+                "1": {
+                  "title": "Facts",
+                  "id": "89.69d97a70028f11e9a94c41d2a13f2d00",
+                  "ideas": {
+                    "1": {
+                      "title": "queue name must end with .fifo",
+                      "id": "90.69d97a70028f11e9a94c41d2a13f2d00"
+                    },
+                    "2": {
+                      "title": "Order of delivery and no duplicates is guarenteed",
+                      "id": "91.69d97a70028f11e9a94c41d2a13f2d00"
+                    },
+                    "3": {
+                      "title": "Content based deduplication",
+                      "id": "93.69d97a70028f11e9a94c41d2a13f2d00",
+                      "ideas": {
+                        "1": {
+                          "title": "If enabled 2 messages with exact same content rejected",
+                          "id": "94.69d97a70028f11e9a94c41d2a13f2d00"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "position": [
+                  68.75,
+                  170.5,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "11": {
+          "title": "Characteristics & Facts",
+          "id": 27,
+          "attr": {
+            "position": [
+              88,
+              104,
+              1
+            ],
+            "style": {
+              "background": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Oldest of AWS",
+              "id": 28
+            },
+            "2": {
+              "title": "Message TTL is default 4 days and max is 14 days",
+              "id": 29
+            },
+            "3": {
+              "title": "Scale from 1 to 10,000/ sec processing",
+              "id": 30
+            },
+            "4": {
+              "title": "No limit to hold in queue ( no provisioning)",
+              "id": 31
+            },
+            "5": {
+              "title": "AT LEAST 1 DELIVERY - can have duplicate messages from Producers",
+              "id": 32
+            },
+            "6": {
+              "title": "Out of Order can be expected",
+              "id": 33
+            }
+          }
+        },
+        "12": {
+          "title": "Security",
+          "id": "95.69d97a70028f11e9a94c41d2a13f2d00",
+          "ideas": {
+            "1": {
+              "title": "No VPC - Must need internet",
+              "id": "96.69d97a70028f11e9a94c41d2a13f2d00"
+            },
+            "2": {
+              "title": "ServerSideEncryption(SSE) is done using KMS",
+              "id": "97.69d97a70028f11e9a94c41d2a13f2d00",
+              "ideas": {
+                "1": {
+                  "title": "Encrypts Only BODY",
+                  "id": "98.69d97a70028f11e9a94c41d2a13f2d00"
+                }
+              }
+            },
+            "3": {
+              "title": "InFlight HTTPS encryption",
+              "id": "100.69d97a70028f11e9a94c41d2a13f2d00"
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "-1": {
+          "title": "PRODUCER",
+          "id": 34,
+          "ideas": {
+            "1": {
+              "title": "Message Building Blocks",
+              "id": 23,
+              "ideas": {
+                "1": {
+                  "title": "Send Message Building blocks",
+                  "id": 9,
+                  "ideas": {
+                    "1": {
+                      "title": "Body",
+                      "id": 10,
+                      "attr": {
+                        "position": [
+                          168,
+                          -98,
+                          1
+                        ]
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "String , max size 256 KB",
+                          "id": 14
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Metadata",
+                      "id": 15,
+                      "ideas": {
+                        "1": {
+                          "title": "NAME-TYPE-VALUE format",
+                          "id": 16,
+                          "attr": {
+                            "position": [
+                              173.18749999999977,
+                              -35.49999999999994,
+                              1
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Delay Delivery Parameter - Max 15 minutes",
+                      "id": 17,
+                      "attr": {
+                        "position": [
+                          252,
+                          119.50000000000011,
+                          2
+                        ]
+                      },
+                      "ideas": {}
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "#99CC00"
+                    },
+                    "position": [
+                      30.75,
+                      -427.5,
+                      4
+                    ]
+                  }
+                },
+                "2": {
+                  "title": "Response Format",
+                  "id": 24,
+                  "ideas": {
+                    "1": {
+                      "title": "Message ID",
+                      "id": 25,
+                      "attr": {
+                        "position": [
+                          170,
+                          -66,
+                          2
+                        ]
+                      }
+                    },
+                    "2": {
+                      "title": "Message Hash of Body and Metadata",
+                      "id": 26
+                    },
+                    "3": {
+                      "title": "Receipt Handle",
+                      "id": "101.69d97a70028f11e9a94c41d2a13f2d00"
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      274,
+                      -25,
+                      5
+                    ],
+                    "style": {
+                      "background": "#99CC00"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#0000FF"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "-2": {
+          "title": "CONSUMER",
+          "id": 35,
+          "attr": {
+            "position": [
+              138,
+              291,
+              2
+            ],
+            "style": {
+              "background": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Consumer Stages",
+              "id": 36,
+              "ideas": {
+                "1": {
+                  "title": "Poll",
+                  "id": 37,
+                  "ideas": {
+                    "1": {
+                      "title": "Can Pull upto 10 messages",
+                      "id": 40
+                    },
+                    "2": {
+                      "title": "Long Polling",
+                      "id": 46,
+                      "ideas": {
+                        "1": {
+                          "title": "If Queue empty, can wait to POLL",
+                          "id": 47,
+                          "ideas": {
+                            "1": {
+                              "title": "1 to 20 sec ( prefer 20)",
+                              "id": 48
+                            },
+                            "2": {
+                              "title": "Saves API calls ",
+                              "id": 49
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "achieved @",
+                          "id": 52,
+                          "ideas": {
+                            "1": {
+                              "title": "Queue Level",
+                              "id": 53
+                            },
+                            "2": {
+                              "title": "WaitTimeSeconds parameter",
+                              "id": 54
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "position": [
+                          416.9843750000002,
+                          70.24999999999989,
+                          1
+                        ],
+                        "style": {
+                          "background": "#FF00FF"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Process",
+                  "id": 38,
+                  "ideas": {
+                    "1": {
+                      "title": "VISIBILITY TIMEOUT",
+                      "id": 41,
+                      "ideas": {
+                        "1": {
+                          "title": "Blocks messages to other consumers for specified time",
+                          "id": 60
+                        },
+                        "2": {
+                          "title": "0 - 12 hours ( default 30 sec )",
+                          "id": 61
+                        },
+                        "3": {
+                          "title": "Setting Precautions",
+                          "id": 62,
+                          "ideas": {
+                            "1": {
+                              "title": "If Low, double processing",
+                              "id": 63
+                            },
+                            "2": {
+                              "title": "If High and fails, need to wait for long time",
+                              "id": 64
+                            },
+                            "3": {
+                              "title": "ChangeMessageVisibilityAPI - Dynamic Setting",
+                              "id": 66,
+                              "attr": {}
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "position": [
+                          250.99999999999977,
+                          119,
+                          1
+                        ],
+                        "style": {
+                          "background": "#FF00FF"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      194.98437500000045,
+                      -65.00000000000023,
+                      2
+                    ]
+                  }
+                },
+                "3": {
+                  "title": "Delete",
+                  "id": 39,
+                  "ideas": {
+                    "1": {
+                      "title": "DeleteMessageAPI",
+                      "id": 59,
+                      "ideas": {
+                        "1": {
+                          "title": "Parameters",
+                          "id": 45,
+                          "ideas": {
+                            "1": {
+                              "title": "MessageId",
+                              "id": 56
+                            },
+                            "2": {
+                              "title": "Receipt Handle",
+                              "id": 57
+                            }
+                          }
+                        }
+                      },
+                      "attr": {}
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      152.98437500000045,
+                      308.9999999999998,
+                      3
+                    ],
+                    "style": {
+                      "width": 98.0156
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "Keys APIs and Params",
+      "id": "79.69d97a70028f11e9a94c41d2a13f2d00",
+      "attr": {
+        "position": [
+          498,
+          -298,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "DelayDelivery Param when sending message",
+          "id": "80.69d97a70028f11e9a94c41d2a13f2d00",
+          "attr": {}
+        },
+        "6": {
+          "title": "DelaySeconds Parameters for DelayQueue",
+          "id": "86.69d97a70028f11e9a94c41d2a13f2d00",
+          "attr": {
+            "style": {
+              "fontMultiplier": 1
+            },
+            "position": [
+              107.01562499999977,
+              -127.75000000000006,
+              1
+            ]
+          }
+        },
+        "11": {
+          "title": "WaitSecondParameter for Long Polling",
+          "id": "81.69d97a70028f11e9a94c41d2a13f2d00",
+          "ideas": {},
+          "attr": {
+            "position": [
+              173.26562499999977,
+              88.49999999999989,
+              4
+            ]
+          }
+        },
+        "-10": {
+          "title": "DeleteMessageAPI for deleting",
+          "id": "83.69d97a70028f11e9a94c41d2a13f2d00",
+          "attr": {
+            "position": [
+              143.9843750000001,
+              67.24999999999989,
+              5
+            ]
+          }
+        },
+        "-5": {
+          "title": "ChangeVisibilityTimeOutAPI for Visibility Timeout",
+          "id": "82.69d97a70028f11e9a94c41d2a13f2d00"
+        }
+      }
+    }
+  },
+  "title": "SQS",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1545233701257,
+      "title": "SQS",
+      "description": "MindMup mind map: SQS",
+      "slug": "sqs",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Auto Scaling Group",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Launch Config",
+          "id": "2.75ec3210232011e98d01f16ccb5c3e27",
+          "ideas": {
+            "1": {
+              "title": "Choose AMI",
+              "id": "3.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "2": {
+              "title": "Provide USer Data",
+              "id": "4.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "3": {
+              "title": "Map EBS Volumes",
+              "id": "5.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "4": {
+              "title": "Choose SG",
+              "id": "6.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "5": {
+              "title": "Choose SSH",
+              "id": "7.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "6": {
+              "title": "Defined Min,Max,Desired",
+              "id": "8.75ec3210232011e98d01f16ccb5c3e27"
+            },
+            "7": {
+              "title": "Define Scaling Policies",
+              "id": "9.75ec3210232011e98d01f16ccb5c3e27",
+              "ideas": {
+                "1": {
+                  "title": "Via Cloud Watch Alarm",
+                  "id": "10.75ec3210232011e98d01f16ccb5c3e27",
+                  "ideas": {
+                    "1": {
+                      "title": "eg",
+                      "id": "11.75ec3210232011e98d01f16ccb5c3e27",
+                      "ideas": {
+                        "1": {
+                          "title": "Metrics",
+                          "id": "12.75ec3210232011e98d01f16ccb5c3e27",
+                          "ideas": {
+                            "1": {
+                              "title": "NetworkIn,Network Out, Average CPU",
+                              "id": "13.75ec3210232011e98d01f16ccb5c3e27",
+                              "attr": {}
+                            }
+                          },
+                          "attr": {
+                            "position": [
+                              38,
+                              -75,
+                              1
+                            ]
+                          }
+                        },
+                        "2": {
+                          "title": "Custom Metrics",
+                          "id": "16.75ec3210232011e98d01f16ccb5c3e27",
+                          "ideas": {
+                            "1": {
+                              "title": "Refer Cloud Watch Alarms MindMap",
+                              "id": "17.75ec3210232011e98d01f16ccb5c3e27"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "width": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "It can also kill instances marked as unhealthy by LB",
+          "id": "22.75ec3210232011e98d01f16ccb5c3e27",
+          "ideas": {
+            "1": {
+              "title": "and create fresh ones",
+              "id": "23.75ec3210232011e98d01f16ccb5c3e27"
+            }
+          }
+        },
+        "-1": {
+          "title": "They can do service discovery",
+          "id": "18.75ec3210232011e98d01f16ccb5c3e27",
+          "ideas": {
+            "1": {
+              "title": "Means when mapped to a LB, ASG will register a instance to TG and remove it too",
+              "id": "19.75ec3210232011e98d01f16ccb5c3e27",
+              "ideas": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "theme": "default",
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548696090117,
+      "title": "Auto Scaling Group",
+      "description": "MindMup mind map: Auto Scaling Group",
+      "slug": "auto_scaling_group",
+      "gaClientCode": false
+    }
+  },
+  "title": "Auto Scaling Group",
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

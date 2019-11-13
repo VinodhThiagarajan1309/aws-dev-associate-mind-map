@@ -1,0 +1,640 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Elastic Bean Stalk",
+      "id": 1,
+      "attr": {
+        "position": [
+          -59,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Combines",
+          "id": "2.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "EC2",
+              "id": "3.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "2": {
+              "title": "ASG",
+              "id": "4.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "3": {
+              "title": "ELB",
+              "id": "5.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "4": {
+              "title": "RDS",
+              "id": "6.3bfb59b01b2c11e98d1f89cee76f240c"
+            }
+          }
+        },
+        "2": {
+          "title": "Supports",
+          "id": "16.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Almost All Languages including Docker",
+              "id": "17.3bfb59b01b2c11e98d1f89cee76f240c"
+            }
+          }
+        },
+        "3": {
+          "title": "Arch Model",
+          "id": "23.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Single instance for Dev",
+              "id": "24.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "2": {
+              "title": "ELB + ASG",
+              "id": "25.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "For Prod",
+                  "id": "26.3bfb59b01b2c11e98d1f89cee76f240c",
+                  "ideas": {
+                    "1": {
+                      "title": "Basically a Multi Tier App",
+                      "id": "40.3bfb59b01b2c11e98d1f89cee76f240c"
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "Just ASG",
+              "id": "28.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "For workers",
+                  "id": "29.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "4": {
+              "title": "You also have custom Config",
+              "id": "38.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Where you can play around with all setting starting from Security, to Instances, to DB etc",
+                  "id": "39.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "Code based Config",
+          "id": "63.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Termed as ELB Extension",
+              "id": "64.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "What is done in UI console can be provide in the config file",
+                  "id": "65.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "When the source code is uploaded, it needs to have .ebextensions/ folder in the root",
+                  "id": "66.3bfb59b01b2c11e98d1f89cee76f240c",
+                  "ideas": {
+                    "1": {
+                      "title": "YAML or JSON",
+                      "id": "67.3bfb59b01b2c11e98d1f89cee76f240c"
+                    },
+                    "2": {
+                      "title": "extension \".config\"",
+                      "id": "68.3bfb59b01b2c11e98d1f89cee76f240c"
+                    },
+                    "3": {
+                      "title": "Modify default setting using \"option_settings\"",
+                      "id": "69.3bfb59b01b2c11e98d1f89cee76f240c"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "Under the hood",
+          "id": "70.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Its Cloud Formation",
+              "id": "71.3bfb59b01b2c11e98d1f89cee76f240c"
+            }
+          }
+        },
+        "-1": {
+          "title": "Components",
+          "id": "7.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Application",
+              "id": "8.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "2": {
+              "title": "Application Environment",
+              "id": "9.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Dev",
+                  "id": "10.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "Test",
+                  "id": "11.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "Prod",
+                  "id": "12.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "3": {
+              "title": "Application Version",
+              "id": "14.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Prod will have the lowest version vs Dev",
+                  "id": "15.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "Types of Apps",
+          "id": "18.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "Web Server Driven App",
+              "id": "20.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "2": {
+              "title": "Workers",
+              "id": "21.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Those which respond to SQS or any other messaging system",
+                  "id": "22.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            }
+          }
+        },
+        "-3": {
+          "title": "Creating Steps",
+          "id": "31.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "1. EC2 created",
+              "id": "32.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "2": {
+              "title": "2. Elastic IP allocated",
+              "id": "33.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "3": {
+              "title": "3.Security Group Created",
+              "id": "34.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "4": {
+              "title": "4. Uploaded Code resides in S3",
+              "id": "36.3bfb59b01b2c11e98d1f89cee76f240c"
+            },
+            "5": {
+              "title": "5. If not provided - Default Env name is provided",
+              "id": "37.3bfb59b01b2c11e98d1f89cee76f240c"
+            }
+          }
+        },
+        "-13": {
+          "title": "Deployment Strategies",
+          "id": "41.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "All at Once",
+              "id": "42.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Self explanatory",
+                  "id": "48.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "Quick",
+                  "id": "49.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "Expect minimal Downtime",
+                  "id": "50.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "2": {
+              "title": "Rolling",
+              "id": "43.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "The EC2 machines are divided into buckets/batches",
+                  "id": "51.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "The App is deployed 1 bucket at a time",
+                  "id": "52.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "At some point expect 2 versions of the app running",
+                  "id": "53.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "3": {
+              "title": "Rolling with additional batches",
+              "id": "44.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Same as above, but new instances will be started and the app will be deployed in them first",
+                  "id": "54.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "Then the current instances will be getting the new version",
+                  "id": "55.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "Once the current instances get the app, the temp new ones are deleted",
+                  "id": "56.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "4": {
+              "title": "Immutable",
+              "id": "45.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "Appropriate for Prod",
+                  "id": "57.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "A new set of ASG is created and the apps are deployed in them",
+                  "id": "58.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "After the above steps success, that ASG is merged with current ASG. Then the old machines in the current ASG are stopped and get the new APP",
+                  "id": "60.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "4": {
+                  "title": "After that the new temp set of ASG machines are deleted",
+                  "id": "61.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "5": {
+                  "title": "Zero Downtime",
+                  "id": "62.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            },
+            "5": {
+              "title": "Blue Green Deployment",
+              "id": "46.3bfb59b01b2c11e98d1f89cee76f240c"
+            }
+          },
+          "attr": {
+            "position": [
+              406,
+              581,
+              1
+            ]
+          }
+        },
+        "-14": {
+          "title": "EB CLI",
+          "id": "72.3bfb59b01b2c11e98d1f89cee76f240c",
+          "ideas": {
+            "1": {
+              "title": "all commands Starts with \"eb\"",
+              "id": "73.3bfb59b01b2c11e98d1f89cee76f240c",
+              "ideas": {
+                "1": {
+                  "title": "eb create",
+                  "id": "74.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "2": {
+                  "title": "eb deploy ",
+                  "id": "75.3bfb59b01b2c11e98d1f89cee76f240c"
+                },
+                "3": {
+                  "title": "eb terminate",
+                  "id": "76.3bfb59b01b2c11e98d1f89cee76f240c"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Elastic Bean Stalk",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1547821952177,
+      "title": "Elastic Bean Stalk",
+      "description": "MindMup mind map: Elastic Bean Stalk",
+      "slug": "elastic_bean_stalk",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

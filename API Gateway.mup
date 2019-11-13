@@ -1,0 +1,705 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "API Gateway",
+      "id": 1,
+      "attr": {
+        "position": [
+          -1150,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Integrates with",
+          "id": "2.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "OutsideVPC",
+              "id": "3.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Lambda",
+                  "id": "4.fd01dd6012b111e9b88dd9fea67d0c73"
+                },
+                "2": {
+                  "title": "EC2",
+                  "id": "5.fd01dd6012b111e9b88dd9fea67d0c73"
+                },
+                "3": {
+                  "title": "LBS",
+                  "id": "6.fd01dd6012b111e9b88dd9fea67d0c73"
+                },
+                "4": {
+                  "title": "Any AWS Service",
+                  "id": "7.fd01dd6012b111e9b88dd9fea67d0c73"
+                },
+                "5": {
+                  "title": "3rd party HTTP Endpoint",
+                  "id": "8.fd01dd6012b111e9b88dd9fea67d0c73"
+                }
+              }
+            },
+            "2": {
+              "title": "Inside VPC",
+              "id": "9.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Lambda",
+                  "id": "10.fd01dd6012b111e9b88dd9fea67d0c73"
+                },
+                "2": {
+                  "title": "EC2",
+                  "id": "11.fd01dd6012b111e9b88dd9fea67d0c73"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              119,
+              -536,
+              4
+            ]
+          }
+        },
+        "2": {
+          "title": "Setting usage Plans",
+          "id": "16.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Quotas",
+              "id": "17.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Throttle",
+              "id": "18.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "3": {
+              "title": "Assign Stage",
+              "id": "19.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "4": {
+              "title": "Assign customer API Key",
+              "id": "20.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          },
+          "attr": {
+            "position": [
+              410,
+              -178,
+              3
+            ]
+          }
+        },
+        "3": {
+          "title": "CORS",
+          "id": "27.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "enable If this service will be called from other domain",
+              "id": "29.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Once enabled OPTIONS will appear for each method",
+              "id": "30.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "2": {
+                  "title": "ACCESS-CONTROL-ALLOW-METHODS",
+                  "id": "32.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "attr": {}
+                },
+                "3": {
+                  "title": "ACCESS-CONTROL-ALLOW-ORIGIN",
+                  "id": "34.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "attr": {}
+                },
+                "4": {
+                  "title": "ACCESS-CONTROL-ALLOW-HEADERS",
+                  "id": "33.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "attr": {}
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              435,
+              38,
+              1
+            ]
+          }
+        },
+        "4": {
+          "title": "Stages",
+          "id": "45.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "In other words they are different deployment regions like DEV,STAGE,PROD",
+              "id": "46.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Stage Variables are like env variables",
+              "id": "47.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Used like convention over configuration",
+                  "id": "48.fd01dd6012b111e9b88dd9fea67d0c73"
+                }
+              }
+            },
+            "3": {
+              "title": "Stage Variables",
+              "id": "49.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Can be used to point to the right lambda ALIAS or Version",
+                  "id": "50.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "ideas": {
+                    "1": {
+                      "title": "The value in available in the Lambda Context object",
+                      "id": "51.fd01dd6012b111e9b88dd9fea67d0c73"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              355,
+              399,
+              2
+            ]
+          }
+        },
+        "-1": {
+          "title": "Creation",
+          "id": "12.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Example Template",
+              "id": "13.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Swagger Download",
+              "id": "14.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "3": {
+              "title": "From the Scratch",
+              "id": "15.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          },
+          "attr": {
+            "position": [
+              477,
+              -400,
+              5
+            ]
+          }
+        },
+        "-2": {
+          "title": "Cache",
+          "id": "21.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Default TTL is 5 min to max 1 hr",
+              "id": "22.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Defined at a stage level",
+              "id": "23.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "3": {
+              "title": "0.5 to 237GB",
+              "id": "24.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "4": {
+              "title": "Able to Flush at a method level",
+              "id": "25.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "5": {
+              "title": "With proper IAM rights, clients can bypass it using CACHE-CONTROL-MAXAGE=0 header",
+              "id": "26.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          },
+          "attr": {
+            "position": [
+              400,
+              -173,
+              6
+            ]
+          }
+        },
+        "-3": {
+          "title": "Mapping Templates",
+          "id": "35.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Used to edit the request or response",
+              "id": "36.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Use Cases",
+                  "id": "39.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "ideas": {
+                    "1": {
+                      "title": "Filter",
+                      "id": "40.fd01dd6012b111e9b88dd9fea67d0c73"
+                    },
+                    "2": {
+                      "title": "Rename Params",
+                      "id": "41.fd01dd6012b111e9b88dd9fea67d0c73"
+                    },
+                    "3": {
+                      "title": "Modify Request and repsonses",
+                      "id": "42.fd01dd6012b111e9b88dd9fea67d0c73"
+                    },
+                    "4": {
+                      "title": "Can be edited at Integration Request and Integration response stage.",
+                      "id": "44.fd01dd6012b111e9b88dd9fea67d0c73"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Uses Velocity Template Language",
+              "id": "38.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          },
+          "attr": {
+            "position": [
+              361,
+              287,
+              7
+            ]
+          }
+        },
+        "-4": {
+          "title": "Monitoring - Available at stage level",
+          "id": "52.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Logs",
+              "id": "53.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Metrics",
+              "id": "54.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "3": {
+              "title": "Xray",
+              "id": "55.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "4": {
+              "title": "First Create a role in IAM and provide access to push logs",
+              "id": "57.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "Assign the ARN in the API Gateway",
+                  "id": "58.fd01dd6012b111e9b88dd9fea67d0c73"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              -21,
+              503,
+              8
+            ]
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "API Gateway Security",
+      "id": "60.fd01dd6012b111e9b88dd9fea67d0c73",
+      "attr": {
+        "position": [
+          85,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "IAM Permission",
+          "id": "62.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "When calling API send a SIG V4",
+              "id": "63.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {
+                "1": {
+                  "title": "API Gateway will validate it with IAM and can proceed",
+                  "id": "64.fd01dd6012b111e9b88dd9fea67d0c73",
+                  "ideas": {
+                    "1": {
+                      "title": "Supports both AUTHENTICATION and AUTHORIZATION",
+                      "id": "65.fd01dd6012b111e9b88dd9fea67d0c73"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Cognito User Pools",
+          "id": "72.fd01dd6012b111e9b88dd9fea67d0c73",
+          "attr": {
+            "position": [
+              19,
+              149,
+              1
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Like OAuth",
+              "id": "75.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "Client calls Cognito User Pools for Token",
+              "id": "76.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "3": {
+              "title": "Client then makes the API call with the token",
+              "id": "78.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "4": {
+              "title": "API Gateway will validate and proceed",
+              "id": "79.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "5": {
+              "title": "Supports ONLY AUTHENTICATION ",
+              "id": "80.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          }
+        },
+        "-1": {
+          "title": "Lambda Authorizer",
+          "id": "67.fd01dd6012b111e9b88dd9fea67d0c73",
+          "ideas": {
+            "1": {
+              "title": "Lambda function is called to validate the token in the header",
+              "id": "68.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "2": {
+              "title": "The token is sent with the API",
+              "id": "69.fd01dd6012b111e9b88dd9fea67d0c73",
+              "ideas": {}
+            },
+            "3": {
+              "title": "API Gateway will call Lambda and then proceed",
+              "id": "71.fd01dd6012b111e9b88dd9fea67d0c73"
+            },
+            "4": {
+              "title": "Supports both AUTHENTICATION and AUTHORIZATION",
+              "id": "74.fd01dd6012b111e9b88dd9fea67d0c73"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "API Gateway",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1546890638398,
+      "title": "API Gateway",
+      "description": "MindMup mind map: API Gateway",
+      "slug": "api_gateway",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

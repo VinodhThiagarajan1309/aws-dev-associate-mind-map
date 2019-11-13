@@ -1,0 +1,516 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "SNS",
+      "id": 1,
+      "attr": {
+        "position": [
+          -17,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Published AKA Event Producer",
+          "id": "2.7fde0dc0034011e99ea5cf4ff77bc97a",
+          "ideas": {
+            "1": {
+              "title": "Send to 1ly 1 topic",
+              "id": "4.7fde0dc0034011e99ea5cf4ff77bc97a",
+              "attr": {
+                "position": [
+                  244,
+                  -47,
+                  2
+                ]
+              }
+            },
+            "2": {
+              "title": "types",
+              "id": "20.7fde0dc0034011e99ea5cf4ff77bc97a",
+              "ideas": {
+                "1": {
+                  "title": "Direct Publish ( no exam scope )",
+                  "id": "22.7fde0dc0034011e99ea5cf4ff77bc97a",
+                  "ideas": {
+                    "1": {
+                      "title": "Google,Apple platform specific",
+                      "id": "23.7fde0dc0034011e99ea5cf4ff77bc97a"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Topic Publish",
+                  "id": "25.7fde0dc0034011e99ea5cf4ff77bc97a",
+                  "ideas": {
+                    "1": {
+                      "title": "Steps",
+                      "id": "27.7fde0dc0034011e99ea5cf4ff77bc97a",
+                      "ideas": {
+                        "1": {
+                          "title": "Create Topic",
+                          "id": "28.7fde0dc0034011e99ea5cf4ff77bc97a"
+                        },
+                        "2": {
+                          "title": "Add Subscribers",
+                          "id": "29.7fde0dc0034011e99ea5cf4ff77bc97a"
+                        },
+                        "3": {
+                          "title": "Publish message",
+                          "id": "30.7fde0dc0034011e99ea5cf4ff77bc97a",
+                          "ideas": {
+                            "1": {
+                              "title": "To Publish Message",
+                              "id": "38.7fde0dc0034011e99ea5cf4ff77bc97a",
+                              "ideas": {
+                                "1": {
+                                  "title": "Topic ARN",
+                                  "id": "40.7fde0dc0034011e99ea5cf4ff77bc97a"
+                                },
+                                "2": {
+                                  "title": "Message Body",
+                                  "id": "41.7fde0dc0034011e99ea5cf4ff77bc97a",
+                                  "ideas": {}
+                                },
+                                "3": {
+                                  "title": "TTL",
+                                  "id": "42.7fde0dc0034011e99ea5cf4ff77bc97a"
+                                },
+                                "2.5": {
+                                  "title": "Message Format",
+                                  "id": "45.7fde0dc0034011e99ea5cf4ff77bc97a"
+                                },
+                                "1.5": {
+                                  "title": "Message Subject",
+                                  "id": "46.7fde0dc0034011e99ea5cf4ff77bc97a",
+                                  "attr": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      34,
+                      169,
+                      1
+                    ]
+                  }
+                }
+              },
+              "attr": {
+                "position": [
+                  180,
+                  95,
+                  3
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "-1": {
+          "title": "Subscriber AKA Event Receiver",
+          "id": "3.7fde0dc0034011e99ea5cf4ff77bc97a",
+          "ideas": {
+            "1": {
+              "title": "types",
+              "id": "15.7fde0dc0034011e99ea5cf4ff77bc97a",
+              "ideas": {
+                "1": {
+                  "title": "HTTP/HTTPS",
+                  "id": "16.7fde0dc0034011e99ea5cf4ff77bc97a"
+                },
+                "2": {
+                  "title": "Email",
+                  "id": "17.7fde0dc0034011e99ea5cf4ff77bc97a"
+                },
+                "3": {
+                  "title": "SQS",
+                  "id": "18.7fde0dc0034011e99ea5cf4ff77bc97a"
+                },
+                "4": {
+                  "title": "Lambda",
+                  "id": "19.7fde0dc0034011e99ea5cf4ff77bc97a"
+                }
+              },
+              "attr": {
+                "position": [
+                  180,
+                  -56,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "-11": {
+          "title": "facts",
+          "id": "10.7fde0dc0034011e99ea5cf4ff77bc97a",
+          "ideas": {
+            "1": {
+              "title": "upto 10,000,000 subscribers per topics",
+              "id": "8.7fde0dc0034011e99ea5cf4ff77bc97a",
+              "attr": {}
+            },
+            "2": {
+              "title": "Upto 100,000 topics",
+              "id": "14.7fde0dc0034011e99ea5cf4ff77bc97a"
+            }
+          },
+          "attr": {
+            "position": [
+              126,
+              23,
+              5
+            ],
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        },
+        "-21": {
+          "title": "SNS+SQS Fanout",
+          "id": "31.7fde0dc0034011e99ea5cf4ff77bc97a",
+          "ideas": {
+            "1": {
+              "title": "UseCase - Send message to multiple Queues",
+              "id": "32.7fde0dc0034011e99ea5cf4ff77bc97a",
+              "ideas": {
+                "1": {
+                  "title": "Publish message to SNS topic",
+                  "id": "34.7fde0dc0034011e99ea5cf4ff77bc97a",
+                  "ideas": {
+                    "1": {
+                      "title": "Add all SQS as subscribers to the topic",
+                      "id": "36.7fde0dc0034011e99ea5cf4ff77bc97a"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              59,
+              156,
+              4
+            ],
+            "style": {
+              "background": "#FF9900"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "SNS",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1545191967357,
+      "title": "SNS",
+      "description": "MindMup mind map: SNS",
+      "slug": "sns",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

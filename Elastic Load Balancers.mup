@@ -1,0 +1,547 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Elastic Load Balancers",
+      "id": 1,
+      "attr": {
+        "position": [
+          -83,
+          -34,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Types",
+          "id": "2.736f9620231c11e98ff9c30980c2093a",
+          "ideas": {
+            "1": {
+              "title": "Classic",
+              "id": "3.736f9620231c11e98ff9c30980c2093a",
+              "ideas": {
+                "1": {
+                  "title": "Deprecated",
+                  "id": "4.736f9620231c11e98ff9c30980c2093a"
+                }
+              }
+            },
+            "2": {
+              "title": "Application Load Balancers",
+              "id": "6.736f9620231c11e98ff9c30980c2093a",
+              "ideas": {
+                "1": {
+                  "title": "Appropriate for Web Apps",
+                  "id": "7.736f9620231c11e98ff9c30980c2093a",
+                  "ideas": {
+                    "1": {
+                      "title": "Can balance",
+                      "id": "8.736f9620231c11e98ff9c30980c2093a",
+                      "ideas": {
+                        "1": {
+                          "title": "Multiple APPs in same machine",
+                          "id": "9.736f9620231c11e98ff9c30980c2093a"
+                        },
+                        "2": {
+                          "title": "Multiple Routes in same machine",
+                          "id": "10.736f9620231c11e98ff9c30980c2093a"
+                        },
+                        "3": {
+                          "title": "Many machines running the app",
+                          "id": "11.736f9620231c11e98ff9c30980c2093a"
+                        },
+                        "4": {
+                          "title": "based on Target groups",
+                          "id": "15.736f9620231c11e98ff9c30980c2093a",
+                          "ideas": {
+                            "1": {
+                              "title": "Target Groups are machines that come under same end point.",
+                              "id": "16.736f9620231c11e98ff9c30980c2093a",
+                              "ideas": {
+                                "1": {
+                                  "title": "Example deploy an app on port 9080 with /search, another on 8080 with /user . They can be balanced",
+                                  "id": "17.736f9620231c11e98ff9c30980c2093a"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Benchmarked 400ms response",
+                  "id": "13.736f9620231c11e98ff9c30980c2093a"
+                },
+                "3": {
+                  "title": "Layer 7",
+                  "id": "14.736f9620231c11e98ff9c30980c2093a"
+                },
+                "4": {
+                  "title": "Connection Termination",
+                  "id": "21.736f9620231c11e98ff9c30980c2093a",
+                  "ideas": {
+                    "1": {
+                      "title": "Means when client provides request to LB. The LB create a new connection to the machine",
+                      "id": "22.736f9620231c11e98ff9c30980c2093a",
+                      "ideas": {
+                        "1": {
+                          "title": "The serving machine cannot see the IP of the client Out of the box",
+                          "id": "23.736f9620231c11e98ff9c30980c2093a",
+                          "ideas": {
+                            "1": {
+                              "title": "X-FORWARDED-IP, PORT,PROTO is how they say it.",
+                              "id": "24.736f9620231c11e98ff9c30980c2093a"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "1.5": {
+                  "title": "Very good for container deployment",
+                  "id": "18.736f9620231c11e98ff9c30980c2093a"
+                },
+                "1.75": {
+                  "title": "Supports Stickiness",
+                  "id": "19.736f9620231c11e98ff9c30980c2093a",
+                  "ideas": {
+                    "1": {
+                      "title": "Means when a client is served from a particular machine, future requests are served from that too. Enabled via cookies.",
+                      "id": "20.736f9620231c11e98ff9c30980c2093a",
+                      "ideas": {
+                        "1": {
+                          "title": "Achieved @ Target level group",
+                          "id": "25.736f9620231c11e98ff9c30980c2093a"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "Network Load Balancer",
+              "id": "32.736f9620231c11e98ff9c30980c2093a",
+              "ideas": {
+                "1": {
+                  "title": "TCP traffic",
+                  "id": "33.736f9620231c11e98ff9c30980c2093a",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Layer 4",
+                  "id": "35.736f9620231c11e98ff9c30980c2093a"
+                },
+                "3": {
+                  "title": "Extremely fast with 100 ms response and millions of calls",
+                  "id": "36.736f9620231c11e98ff9c30980c2093a"
+                },
+                "4": {
+                  "title": "They see Client IP",
+                  "id": "45.736f9620231c11e98ff9c30980c2093a"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              225,
+              -397,
+              1
+            ],
+            "style": {
+              "width": 89
+            }
+          }
+        },
+        "3": {
+          "title": "Highly available across ZONE",
+          "id": "31.736f9620231c11e98ff9c30980c2093a"
+        },
+        "-1": {
+          "title": "Health Checks",
+          "id": "26.736f9620231c11e98ff9c30980c2093a",
+          "ideas": {
+            "1": {
+              "title": "When deploying APP, develop an end point that will provide 200 and show that the APP is alive",
+              "id": "27.736f9620231c11e98ff9c30980c2093a",
+              "ideas": {
+                "1": {
+                  "title": "LB calls this link periodically and throws ALARMS etc . Come with many configs",
+                  "id": "28.736f9620231c11e98ff9c30980c2093a"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              286,
+              -392,
+              2
+            ]
+          }
+        },
+        "-2": {
+          "title": "Have Static Host name",
+          "id": "30.736f9620231c11e98ff9c30980c2093a",
+          "attr": {
+            "position": [
+              273,
+              -228,
+              3
+            ]
+          }
+        },
+        "-3": {
+          "title": "You can map a LB's port to map to a port of a target group. Like mapping 80 of LB to 9786 of underlying Target group.",
+          "id": "37.736f9620231c11e98ff9c30980c2093a",
+          "ideas": {
+            "1": {
+              "title": "This is called Port Mapping",
+              "id": "38.736f9620231c11e98ff9c30980c2093a"
+            }
+          },
+          "attr": {
+            "position": [
+              489,
+              -98,
+              4
+            ]
+          }
+        },
+        "-13": {
+          "title": "Can you used to load balance Public and Internal websites too",
+          "id": "29.736f9620231c11e98ff9c30980c2093a",
+          "attr": {
+            "position": [
+              295,
+              94,
+              5
+            ]
+          }
+        },
+        "-23": {
+          "title": "Security",
+          "id": "39.736f9620231c11e98ff9c30980c2093a",
+          "ideas": {
+            "1": {
+              "title": "If want to block direct access to EC2 machines ?",
+              "id": "41.736f9620231c11e98ff9c30980c2093a",
+              "ideas": {
+                "1": {
+                  "title": "Allow only the Security Group of the LB have the inbound access to the specified port of the TG",
+                  "id": "42.736f9620231c11e98ff9c30980c2093a",
+                  "ideas": {}
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              117,
+              335,
+              6
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Elastic Load Balancers",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548694931468,
+      "title": "Elastic Load Balancers",
+      "description": "MindMup mind map: Elastic Load Balancers",
+      "slug": "elastic_load_balancers",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

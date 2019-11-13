@@ -1,0 +1,418 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "System Manager Parameter Store",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Like Vault",
+          "id": "3.ecba6a7018e811e993a3db018c660777"
+        },
+        "11": {
+          "title": "Stores configs and secrets",
+          "id": "4.ecba6a7018e811e993a3db018c660777"
+        },
+        "21": {
+          "title": "Can store the creds under path just like vault",
+          "id": "5.ecba6a7018e811e993a3db018c660777",
+          "ideas": {
+            "1": {
+              "title": "Can you Lambda environment variables to distinguish the calls to different paths like Dev/Prod",
+              "id": "6.ecba6a7018e811e993a3db018c660777"
+            },
+            "2": {
+              "title": "Example Paths",
+              "id": "7.ecba6a7018e811e993a3db018c660777",
+              "ideas": {
+                "1": {
+                  "title": "/my-app",
+                  "id": "8.ecba6a7018e811e993a3db018c660777",
+                  "ideas": {
+                    "1": {
+                      "title": "/my-app/dev",
+                      "id": "9.ecba6a7018e811e993a3db018c660777",
+                      "ideas": {
+                        "1": {
+                          "title": "/my-app/dev/db-url",
+                          "id": "10.ecba6a7018e811e993a3db018c660777",
+                          "ideas": {}
+                        },
+                        "2": {
+                          "title": "/my-app/dev/db-password",
+                          "id": "11.ecba6a7018e811e993a3db018c660777"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "/my-app/prod",
+                      "ideas": {
+                        "1": {
+                          "title": "/my-app/prod/db-url",
+                          "id": "13.ecba6a7018e811e993a3db018c660777"
+                        },
+                        "2": {
+                          "title": "/my-app/prod/db-password",
+                          "id": "14.ecba6a7018e811e993a3db018c660777"
+                        }
+                      },
+                      "id": "12.ecba6a7018e811e993a3db018c660777",
+                      "attr": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Use Cases",
+          "id": "18.ecba6a7018e811e993a3db018c660777",
+          "ideas": {
+            "1": {
+              "title": "Call SSM for PlainText",
+              "id": "19.ecba6a7018e811e993a3db018c660777",
+              "ideas": {
+                "1": {
+                  "title": "SSM calls IAM and gives back the plain text",
+                  "id": "20.ecba6a7018e811e993a3db018c660777",
+                  "ideas": {}
+                }
+              }
+            },
+            "2": {
+              "title": "Call SSM for encrypted config",
+              "id": "23.ecba6a7018e811e993a3db018c660777",
+              "ideas": {
+                "1": {
+                  "title": "SSM calls IAM and then KMS to give back decrypted Config",
+                  "id": "24.ecba6a7018e811e993a3db018c660777"
+                }
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "API",
+          "id": "25.ecba6a7018e811e993a3db018c660777",
+          "ideas": {
+            "1": {
+              "title": "GetParameterAPI",
+              "id": "26.ecba6a7018e811e993a3db018c660777"
+            },
+            "2": {
+              "title": "GetParameterByPathAPI",
+              "id": "27.ecba6a7018e811e993a3db018c660777"
+            }
+          }
+        },
+        "-3": {
+          "title": "Free,Serverless,Scalable",
+          "id": "28.ecba6a7018e811e993a3db018c660777"
+        }
+      }
+    }
+  },
+  "title": "System Manager Parameter Store",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1547573238193,
+      "title": "System Manager Parameter Store",
+      "description": "MindMup mind map: System Manager Parameter Store",
+      "slug": "system_manager_parameter_store",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

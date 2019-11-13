@@ -1,0 +1,474 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Code Deploy",
+      "id": 1,
+      "attr": {
+        "position": [
+          -43,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Deploying to a group of EC2 machines",
+          "id": "2.f18ef5c0142e11e9a37ff59e7920d1d8"
+        },
+        "11": {
+          "title": "Set of machines divided by tags and called Deployment groups",
+          "id": "3.f18ef5c0142e11e9a37ff59e7920d1d8",
+          "ideas": {
+            "1": {
+              "title": "Dev",
+              "id": "4.f18ef5c0142e11e9a37ff59e7920d1d8",
+              "ideas": {}
+            },
+            "2": {
+              "title": "Test",
+              "id": "6.f18ef5c0142e11e9a37ff59e7920d1d8"
+            },
+            "3": {
+              "title": "Prod",
+              "id": "7.f18ef5c0142e11e9a37ff59e7920d1d8"
+            }
+          }
+        },
+        "12": {
+          "title": "The one key file name is APPSPEC.YML",
+          "id": "14.f18ef5c0142e11e9a37ff59e7920d1d8",
+          "ideas": {
+            "1": {
+              "title": "File is made of 2 sections",
+              "id": "15.f18ef5c0142e11e9a37ff59e7920d1d8",
+              "ideas": {
+                "1": {
+                  "title": "FILES",
+                  "id": "16.f18ef5c0142e11e9a37ff59e7920d1d8",
+                  "ideas": {
+                    "1": {
+                      "title": "This holds the info of where to fetch the files from S3 or CodeCommit",
+                      "id": "18.f18ef5c0142e11e9a37ff59e7920d1d8",
+                      "attr": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Hooks",
+                  "id": "17.f18ef5c0142e11e9a37ff59e7920d1d8",
+                  "ideas": {
+                    "1": {
+                      "title": "These are Generally steps following are the steps",
+                      "id": "19.f18ef5c0142e11e9a37ff59e7920d1d8",
+                      "ideas": {
+                        "1": {
+                          "title": "Before Install",
+                          "id": "20.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "2": {
+                          "title": "After Install",
+                          "id": "21.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "3": {
+                          "title": "Application Start",
+                          "id": "24.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "4": {
+                          "title": "Validate Service",
+                          "id": "25.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "5": {
+                          "title": "Before Allow Traffic",
+                          "id": "26.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "6": {
+                          "title": "Allow Traffic ",
+                          "id": "27.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "7": {
+                          "title": "After Allow Traffic",
+                          "id": "28.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        },
+                        "0.5": {
+                          "title": "Download Bundle",
+                          "id": "22.f18ef5c0142e11e9a37ff59e7920d1d8"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Present in the root of the project",
+              "id": "40.f18ef5c0142e11e9a37ff59e7920d1d8"
+            }
+          }
+        },
+        "-1": {
+          "title": "Usage",
+          "id": "8.f18ef5c0142e11e9a37ff59e7920d1d8",
+          "ideas": {
+            "1": {
+              "title": "Can be directly used",
+              "id": "9.f18ef5c0142e11e9a37ff59e7920d1d8"
+            },
+            "2": {
+              "title": "Or from AWS Pipeline",
+              "id": "10.f18ef5c0142e11e9a37ff59e7920d1d8"
+            }
+          }
+        },
+        "-2": {
+          "title": "Every machine must run a Code Deploy Agent",
+          "id": "11.f18ef5c0142e11e9a37ff59e7920d1d8",
+          "ideas": {
+            "1": {
+              "title": "These agents will constantly Ping code deploy for new deployments",
+              "id": "13.f18ef5c0142e11e9a37ff59e7920d1d8"
+            }
+          }
+        },
+        "-3": {
+          "title": "Failure strategies",
+          "id": "29.f18ef5c0142e11e9a37ff59e7920d1d8",
+          "ideas": {
+            "1": {
+              "title": "One at a Time",
+              "id": "31.f18ef5c0142e11e9a37ff59e7920d1d8",
+              "ideas": {
+                "1": {
+                  "title": "Stop deployment even if one fails",
+                  "id": "36.f18ef5c0142e11e9a37ff59e7920d1d8"
+                }
+              }
+            },
+            "2": {
+              "title": "Half at a time",
+              "id": "32.f18ef5c0142e11e9a37ff59e7920d1d8",
+              "ideas": {
+                "1": {
+                  "title": "Stop deployment if 50% failure",
+                  "id": "37.f18ef5c0142e11e9a37ff59e7920d1d8"
+                }
+              }
+            },
+            "3": {
+              "title": "Custom Number at a time",
+              "id": "33.f18ef5c0142e11e9a37ff59e7920d1d8"
+            },
+            "4": {
+              "title": "All At once",
+              "id": "35.f18ef5c0142e11e9a37ff59e7920d1d8"
+            },
+            "5": {
+              "title": "When deploying again The FAILED Instances is where the deployment starts - they will be in IN FAILED STATE",
+              "id": "38.f18ef5c0142e11e9a37ff59e7920d1d8",
+              "ideas": {
+                "1": {
+                  "title": "Then the Hooks steps follows",
+                  "id": "39.f18ef5c0142e11e9a37ff59e7920d1d8"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Code Deploy",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1547053345306,
+      "title": "Code Deploy",
+      "description": "MindMup mind map: Code Deploy",
+      "slug": "code_deploy",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

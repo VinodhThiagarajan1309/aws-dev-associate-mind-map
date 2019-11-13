@@ -1,0 +1,463 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Key Management System ( KMS )",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Uses to Secure",
+          "id": "3.81e796d018e011e9b035e1b4755ff3dc",
+          "ideas": {
+            "1": {
+              "title": "EBS",
+              "id": "4.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "Volumes",
+                  "id": "5.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            },
+            "2": {
+              "title": "S3",
+              "id": "8.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "Server side encryption of objects",
+                  "id": "15.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            },
+            "3": {
+              "title": "RedShift",
+              "id": "9.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "Data Encryption",
+                  "id": "14.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            },
+            "4": {
+              "title": "RDS",
+              "id": "10.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "Data Encryption",
+                  "id": "13.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            },
+            "5": {
+              "title": "SSM",
+              "id": "11.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "Parameter store",
+                  "id": "12.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Facts",
+          "id": "18.81e796d018e011e9b035e1b4755ff3dc",
+          "ideas": {
+            "1": {
+              "title": "Can encrypt data upto 4KB",
+              "id": "19.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "If wanted to encrypt more the use ENCRYPT ENVELOPE",
+                  "id": "20.81e796d018e011e9b035e1b4755ff3dc"
+                }
+              }
+            },
+            "2": {
+              "title": "Charges 0.03$ for every 10,000 API calls",
+              "id": "21.81e796d018e011e9b035e1b4755ff3dc"
+            },
+            "3": {
+              "title": "You can encrypt and decrypt using the Customer Master Key(CMS) but will never be able to see the key itself. It can be rotated/",
+              "id": "29.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {}
+            },
+            "4": {
+              "title": "3 types of keys ",
+              "id": "31.81e796d018e011e9b035e1b4755ff3dc",
+              "ideas": {
+                "1": {
+                  "title": "AWS managed server side encryption key",
+                  "id": "32.81e796d018e011e9b035e1b4755ff3dc",
+                  "ideas": {
+                    "1": {
+                      "title": "Free",
+                      "id": "33.81e796d018e011e9b035e1b4755ff3dc",
+                      "ideas": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Users keys created by you in KMS",
+                  "id": "36.81e796d018e011e9b035e1b4755ff3dc",
+                  "ideas": {
+                    "1": {
+                      "title": "1$ per month",
+                      "id": "37.81e796d018e011e9b035e1b4755ff3dc"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Created by you externally and used in KMS",
+                  "id": "39.81e796d018e011e9b035e1b4755ff3dc",
+                  "ideas": {
+                    "1": {
+                      "title": "1$/month",
+                      "id": "40.81e796d018e011e9b035e1b4755ff3dc"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Purpose",
+          "id": "16.81e796d018e011e9b035e1b4755ff3dc",
+          "ideas": {
+            "1": {
+              "title": "If you need to share sensitive information then use KMS ( like Vault)",
+              "id": "17.81e796d018e011e9b035e1b4755ff3dc"
+            }
+          }
+        },
+        "-2": {
+          "title": "Process",
+          "id": "23.81e796d018e011e9b035e1b4755ff3dc",
+          "ideas": {
+            "1": {
+              "title": "Create Key",
+              "id": "24.81e796d018e011e9b035e1b4755ff3dc"
+            },
+            "2": {
+              "title": "Allow AWS to create a Key or you can download your key too",
+              "id": "26.81e796d018e011e9b035e1b4755ff3dc"
+            },
+            "3": {
+              "title": "Provide which users have access to use the keys",
+              "id": "27.81e796d018e011e9b035e1b4755ff3dc"
+            },
+            "4": {
+              "title": "Key policy is generated and it can be assigned to users too in order for them to call the Encrypt and Decrypt APIs",
+              "id": "28.81e796d018e011e9b035e1b4755ff3dc"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Key Management System ( KMS )",
+  "links": [],
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1547569446361,
+      "title": "Key Management System ( KMS )",
+      "description": "MindMup mind map: Key Management System ( KMS )",
+      "slug": "key_management_system_kms_",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

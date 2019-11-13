@@ -1,0 +1,473 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "VPC",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          245,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Every Account comes with default VPC",
+          "id": "2.9210f7b020d111e9b41363b331e978ad",
+          "ideas": {
+            "1": {
+              "title": "It has 3 subnets",
+              "id": "3.9210f7b020d111e9b41363b331e978ad"
+            }
+          }
+        },
+        "2": {
+          "title": "Peer VPC",
+          "id": "17.9210f7b020d111e9b41363b331e978ad",
+          "ideas": {
+            "1": {
+              "title": "Making across account VPCs look like the same",
+              "id": "18.9210f7b020d111e9b41363b331e978ad"
+            }
+          }
+        },
+        "-1": {
+          "title": "Hierarchy",
+          "id": "4.9210f7b020d111e9b41363b331e978ad",
+          "ideas": {
+            "1": {
+              "title": "Virgina Is a REGION",
+              "id": "5.9210f7b020d111e9b41363b331e978ad",
+              "ideas": {
+                "1": {
+                  "title": "its has 6 AVAILABILITY ZONES",
+                  "id": "6.9210f7b020d111e9b41363b331e978ad",
+                  "ideas": {
+                    "1": {
+                      "title": "Each AZ has many SUBNETS",
+                      "id": "7.9210f7b020d111e9b41363b331e978ad",
+                      "ideas": {
+                        "1": {
+                          "title": "These Subnet can be Public or Private",
+                          "id": "8.9210f7b020d111e9b41363b331e978ad",
+                          "ideas": {
+                            "1": {
+                              "title": "Public",
+                              "id": "9.9210f7b020d111e9b41363b331e978ad",
+                              "ideas": {
+                                "1": {
+                                  "title": "LB",
+                                  "id": "10.9210f7b020d111e9b41363b331e978ad"
+                                },
+                                "2": {
+                                  "title": "Static Hosting",
+                                  "id": "11.9210f7b020d111e9b41363b331e978ad"
+                                },
+                                "3": {
+                                  "title": "Has Internet Access",
+                                  "id": "16.9210f7b020d111e9b41363b331e978ad"
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "Private",
+                              "id": "12.9210f7b020d111e9b41363b331e978ad",
+                              "ideas": {
+                                "1": {
+                                  "title": "Webserver",
+                                  "id": "13.9210f7b020d111e9b41363b331e978ad",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "Database",
+                                      "id": "14.9210f7b020d111e9b41363b331e978ad"
+                                    }
+                                  }
+                                },
+                                "2": {
+                                  "title": "No internet access , means no one can access them from Internet",
+                                  "id": "15.9210f7b020d111e9b41363b331e978ad"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "3 tier Flow",
+      "id": "19.9210f7b020d111e9b41363b331e978ad",
+      "attr": {
+        "position": [
+          -427,
+          -172,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "1. Client calls a Domain",
+          "id": "20.9210f7b020d111e9b41363b331e978ad",
+          "attr": {
+            "position": [
+              110,
+              -149,
+              5
+            ]
+          }
+        },
+        "11": {
+          "title": "2. Route 53 realizes it",
+          "id": "21.9210f7b020d111e9b41363b331e978ad"
+        },
+        "21": {
+          "title": "3. ELB in Public AZ routes them to ASG in Private AZ",
+          "id": "22.9210f7b020d111e9b41363b331e978ad",
+          "attr": {
+            "position": [
+              143,
+              126,
+              4
+            ]
+          }
+        },
+        "-10": {
+          "title": "6. If not its fetched from DB and also written in Cache",
+          "id": "25.9210f7b020d111e9b41363b331e978ad",
+          "attr": {
+            "position": [
+              310,
+              -170,
+              1
+            ]
+          }
+        },
+        "-20": {
+          "title": "5. App first called Elastic Cache",
+          "id": "24.9210f7b020d111e9b41363b331e978ad",
+          "attr": {
+            "position": [
+              272,
+              -34,
+              2
+            ]
+          }
+        },
+        "-30": {
+          "title": "4. Instance in the ASG calls DB",
+          "id": "23.9210f7b020d111e9b41363b331e978ad",
+          "attr": {
+            "position": [
+              243,
+              100,
+              3
+            ]
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "theme": "default",
+    "previous-atlas-export": {
+      "publishedTimestamp": 1548442417147,
+      "title": "VPC",
+      "description": "MindMup mind map: VPC",
+      "slug": "vpc",
+      "gaClientCode": false
+    }
+  },
+  "title": "VPC",
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}

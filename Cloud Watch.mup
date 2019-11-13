@@ -1,0 +1,734 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Cloud Watch",
+      "id": 1,
+      "attr": {
+        "position": [
+          -1181,
+          -27,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Metrics",
+          "id": "2.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "11": {
+          "title": "Alarms",
+          "id": "3.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "21": {
+          "title": "Logs",
+          "id": "4.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "31": {
+          "title": "Events",
+          "id": "5.6b1e0f4003ca11e99d8e9b1798d9435b"
+        }
+      }
+    },
+    "2": {
+      "title": "Metrics",
+      "id": "7.6b1e0f4003ca11e99d8e9b1798d9435b",
+      "attr": {
+        "position": [
+          -500,
+          215,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "types",
+          "id": "9.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "AWS provided",
+              "id": "10.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "example",
+                  "id": "12.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "NetworkIn",
+                      "id": "14.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "2": {
+                      "title": "CPU Util",
+                      "id": "15.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "3": {
+                      "title": "Disk Reads",
+                      "id": "16.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "4": {
+                      "title": "Disk Writes",
+                      "id": "17.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "EC2 Metric",
+                  "id": "29.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "For Free 5 min resolution - BASIC MONITORIN",
+                      "id": "30.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "2": {
+                      "title": "For Cost 1 min resolution (10 free in FREE TIER) - DETAILED MONITORING",
+                      "id": "31.6b1e0f4003ca11e99d8e9b1798d9435b",
+                      "ideas": {
+                        "1": {
+                          "title": "Useful for ASG decisions",
+                          "id": "32.6b1e0f4003ca11e99d8e9b1798d9435b"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Custom",
+              "id": "11.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "example",
+                  "id": "18.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "RAM usage (EC2 doesn't provide it by default)",
+                      "id": "19.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Once defined will appear under Custom Namespace like (EC2(21 metrics), S3(4 metrics), <OUR-NAME-SPACE>(2 metrics)",
+                  "id": "21.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "3": {
+                  "title": "For Free 1 min resolution",
+                  "id": "33.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "4": {
+                  "title": "For Cost 1 sec HIGH Resolution",
+                  "id": "34.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "enabled using StorageResolutionAPI",
+                      "id": "35.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Every Service has this feature",
+          "id": "26.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "-1": {
+          "title": "Dimension",
+          "id": "22.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "Can view the metric based on these attributes",
+              "id": "23.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "2": {
+              "title": "Upto 10 dimension per metric",
+              "id": "24.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "3": {
+              "title": "example",
+              "id": "36.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "InstanceId",
+                  "id": "37.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "2": {
+                  "title": "Environment",
+                  "id": "38.6b1e0f4003ca11e99d8e9b1798d9435b"
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              87,
+              -223,
+              1
+            ]
+          }
+        },
+        "-2": {
+          "title": "To Send Metric call PutMetricData API",
+          "id": "28.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "attr": {
+            "position": [
+              147,
+              -35,
+              2
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "title": "Alarms",
+      "id": "40.6b1e0f4003ca11e99d8e9b1798d9435b",
+      "attr": {
+        "position": [
+          503,
+          155,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Trigger Notification for any metric",
+          "id": "41.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "2": {
+          "title": "Terminologies",
+          "id": "49.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "PERIOD",
+              "id": "52.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "Time required to evaluate the metric",
+                  "id": "54.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "2": {
+                  "title": "ex, if CPUUtilzation > 90% for 300 sec (300 is the PERIOD)",
+                  "id": "55.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "attr": {}
+                },
+                "3": {
+                  "title": "For Custom Metrics PERIOD can be either 10 or 30 sec only",
+                  "id": "56.6b1e0f4003ca11e99d8e9b1798d9435b"
+                }
+              }
+            },
+            "2": {
+              "title": "STATES",
+              "id": "58.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "OK",
+                  "id": "59.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "2": {
+                  "title": "INSUFFICIENT DATA",
+                  "id": "60.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "You want a alarm to trigger for some metric analyzed every 60 min but your system is up only for 5 min",
+                      "id": "61.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ALARM",
+                  "id": "62.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "Send mail to a List of email ids (SNS) works only if you confirm",
+                      "id": "63.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "2": {
+                      "title": "Can take actions too like adding/removing instances",
+                      "id": "64.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Can be triggered based on",
+          "id": "43.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "Sampling",
+              "id": "44.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "2": {
+              "title": "%",
+              "id": "45.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "3": {
+              "title": "Min",
+              "id": "46.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "4": {
+              "title": "Max",
+              "id": "47.6b1e0f4003ca11e99d8e9b1798d9435b"
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "title": "Log",
+      "id": "66.6b1e0f4003ca11e99d8e9b1798d9435b",
+      "attr": {
+        "position": [
+          -347,
+          620,
+          1
+        ],
+        "style": {
+          "width": 50
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Can send logs from almost all the products",
+          "id": "67.6b1e0f4003ca11e99d8e9b1798d9435b"
+        },
+        "2": {
+          "title": "Hierarchy",
+          "id": "70.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "Log Groups",
+              "id": "71.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "Given a name ( any name ) usually tied to App",
+                  "id": "72.6b1e0f4003ca11e99d8e9b1798d9435b"
+                },
+                "2": {
+                  "title": "Log Streams",
+                  "id": "73.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "ideas": {
+                    "1": {
+                      "title": "Actual Log Holders",
+                      "id": "74.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "2": {
+                      "title": "Subset of Log Group",
+                      "id": "77.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "3": {
+                      "title": "Individual Instance , container log inside the Log Group",
+                      "id": "79.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    },
+                    "4": {
+                      "title": "Logs can be filtered and searched",
+                      "id": "69.6b1e0f4003ca11e99d8e9b1798d9435b",
+                      "attr": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "Logs can be cold stored to",
+          "id": "80.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "S3",
+              "id": "81.6b1e0f4003ca11e99d8e9b1798d9435b"
+            },
+            "2": {
+              "title": "Elastic Search",
+              "id": "82.6b1e0f4003ca11e99d8e9b1798d9435b"
+            }
+          }
+        },
+        "-3": {
+          "title": "Can Set Retention",
+          "id": "83.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {}
+        },
+        "-13": {
+          "title": "Can use AWS CLI to tail logs",
+          "id": "85.6b1e0f4003ca11e99d8e9b1798d9435b"
+        }
+      }
+    },
+    "5": {
+      "title": "Event",
+      "id": "86.6b1e0f4003ca11e99d8e9b1798d9435b",
+      "attr": {
+        "position": [
+          761,
+          882,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Types",
+          "id": "87.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "Scheduled",
+              "id": "88.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "Do something in a scheduled fashion",
+                  "id": "93.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "Every 5 minutes execute a Lambda function",
+                      "id": "94.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Event Pattern",
+              "id": "89.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "ideas": {
+                "1": {
+                  "title": "Wait for something to happen and Do Something",
+                  "id": "92.6b1e0f4003ca11e99d8e9b1798d9435b",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "Event the CodePipeline State Changes insert into SNS",
+                      "id": "95.6b1e0f4003ca11e99d8e9b1798d9435b"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Output",
+          "id": "90.6b1e0f4003ca11e99d8e9b1798d9435b",
+          "ideas": {
+            "1": {
+              "title": "Is a JSON message that will sent to the target with the EVENT details",
+              "id": "96.6b1e0f4003ca11e99d8e9b1798d9435b",
+              "attr": {
+                "position": [
+                  -94,
+                  -177,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "fontMultiplier": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Cloud Watch",
+  "attr": {
+    "previous-atlas-export": {
+      "publishedTimestamp": 1545258504870,
+      "title": "Cloud Watch",
+      "description": "MindMup mind map: Cloud Watch",
+      "slug": "cloud_watch",
+      "gaClientCode": false
+    }
+  },
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
