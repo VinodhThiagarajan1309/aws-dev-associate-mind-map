@@ -81,7 +81,7 @@
           "id": "18.9132aeb0137511e98ddf9366b62adb3b",
           "ideas": {
             "1": {
-              "title": "Will work will buildconfig.yaml in the root file",
+              "title": "Will only work if buildconfig.yaml is in the root file",
               "id": "19.9132aeb0137511e98ddf9366b62adb3b",
               "ideas": {
                 "1": {
